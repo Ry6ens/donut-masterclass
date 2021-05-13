@@ -1,3 +1,18 @@
-// точки перелома 320px, 768px, 1280px. Для мобильной версии сайта вёрстка респонсивная.
-//  Сайт должен корректно просматриваться всех возможных размерах окна браузера и устройствах,
-//  начиная с ширины 320px, как в портретной, так и в альбомной ориентации.
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 634px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 822px;
+  }
+}

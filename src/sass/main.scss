@@ -1,7 +1,21 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
+// імпорт змінних, плейсхолдерів, міксинів
+@import './utils/variables';
 
-// Стили для файла с примером HTML-фрагмента
-@import './example';
+// імпорт базових стилів
+@import './base/fonts';
+@import './base/common';
+@import './base/conteiner';
+
+// імпорт компонентів
+@import './components/button';
+@import './components/socials';
+
+// імпорт секцій
+@import './layout/header';
+@import './layout/menu';
+@import './layout/about';
+@import './layout/program';
+@import './layout/reviews';
+@import './layout/registration';
+@import './layout/contact';
+@import './layout/footer';

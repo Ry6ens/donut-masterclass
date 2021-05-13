@@ -1,0 +1,69 @@
+.hero__title {
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 1.27;
+
+  color: #2e2520;
+  margin-bottom: 3px;
+  width: 224px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 64px;
+    line-height: 1.02;
+    margin-bottom: 15px;
+    width: 490px;
+  }
+}
+
+.hero__conteiner {
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.hero__text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 0;
+
+  color: #2e2520;
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.21;
+  }
+}
+.hero__button {
+  font-family: Caveat Brush;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 3.61;
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #ab816c;
+  border-radius: 25px;
+  padding-left: 46px;
+  padding-right: 46px;
+  @media screen and (max-width: 768px) {
+    margin-top: 37px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    margin-top: 26px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 2.71;
+    padding-left: 44px;
+    padding-right: 44px;
+    margin-top: 30px;
+  }
+}

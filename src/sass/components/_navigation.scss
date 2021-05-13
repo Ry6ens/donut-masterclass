@@ -10,3 +10,11 @@
   line-height: 1.22;
   color: #2e2520;
 }
+
+.navigation-list__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navigation-list__item:not(:last-child) {
+  margin-right: 50px;
+}

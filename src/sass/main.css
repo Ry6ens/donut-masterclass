@@ -1,5 +1,6 @@
 :root {
-  --color: black;
+  --main-font: 'Montserrat', sans-serif;
+  --decorative-font: 'Caveat Brush', cursive;
 }
 
 html {
@@ -15,7 +16,7 @@ html {
 }
 
 body {
-  color: #330c0a;
+  font-family: var(--main-font);
 }
 
 h1,

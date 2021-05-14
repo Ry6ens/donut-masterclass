@@ -9,13 +9,71 @@
 
 .header-conteiner {
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header-button {
   position: absolute;
   top: 10px;
   right: 10px;
+  border: none;
   @media screen and (min-width: 1280px) {
     display: none;
+  }
+}
+
+.bg-conteiner {
+  @media screen and (max-width: 768px) {
+    background-image: url(../images/bg-image/mobile/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/bg-image/mobile/header-bg@2x.png);
+    }
+  }
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/bg-image/tablet/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/bg-image/tablet/header-bg@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/header/desktop/spoon.png),
+      url(../images/bg-image/desktop/header-bg.png);
+    background-size: contain, cover;
+    background-position: 0 65px, top left;
+    background-repeat: no-repeat, no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/header/desktop/spoon@2x.png),
+        url(../images/bg-image/desktop/header-bg@2x.png);
+    }
+  }
+}
+
+.bg-image {
+  position: absolute;
+  @media screen and (max-width: 768px) {
+    top: -30px;
+    left: -20px;
+  }
+  @media screen and (min-width: 769px) {
+    top: 0;
+    right: -20px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 0;
+    right: 0;
+  }
+}
+
+.bg-image-spoon {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
   }
 }

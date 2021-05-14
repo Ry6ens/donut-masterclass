@@ -29,7 +29,7 @@
   font-style: italic;
   font-weight: 500;
   font-size: 14px;
-  line-height: 4.64;
+  line-height: 2.64;
   text-align: center;
   color: var(--main-text-color);
 }
@@ -136,4 +136,14 @@
     margin:0 ;
      
   }
+}
+.container-reviews__star--min,
+.container-reviews__star{
+  text-align: center;
+  color: #AB816C;
+
+}
+.container-reviews__item--will{
+  display: flex;
+  flex-direction: column;
 }

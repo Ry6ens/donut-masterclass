@@ -1,0 +1,18 @@
+.navigation-list {
+  display: flex;
+  margin-left: 38px;
+}
+.navigation-list__link {
+  font-family: var(--main-font);
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--main-text-color);
+}
+
+.navigation-list__item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navigation-list__item:not(:last-child) {
+  margin-right: 50px;
+}

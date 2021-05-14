@@ -1,0 +1,13 @@
+.social-list {
+  display: flex;
+  margin-top: 57px;
+
+  & .icon {
+    height: 19px;
+    width: 24px;
+    fill: var(--main-text-color);
+  }
+}
+.social-list__item:not(:last-child) {
+  margin-right: 12px;
+}

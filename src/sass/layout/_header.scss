@@ -19,3 +19,41 @@
     display: none;
   }
 }
+
+.bg-conteiner {
+  @media screen and (min-width: 769px) {
+    background-image: url(../images/bg-image/tablet/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/bg-image/desktop/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.bg-image {
+  position: absolute;
+  @media screen and (max-width: 768px) {
+    top: -30px;
+    left: -20px;
+  }
+  @media screen and (min-width: 769px) {
+    top: 0;
+    right: -20px;
+  }
+  @media screen and (min-width: 1280px) {
+    top: 0;
+    right: 0;
+  }
+}
+
+.bg-image-spoon {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+  }
+}

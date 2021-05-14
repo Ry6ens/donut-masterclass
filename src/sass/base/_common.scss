@@ -10,6 +10,10 @@ html {
 
 body {
   font-family: var(--main-font), sans-serif;
+  font-size: 18px;
+  line-height: 1.22;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
 }
 
 h1,
@@ -22,12 +26,16 @@ p {
   margin-top: 0;
 }
 
-// .link {
-// }
+.link {
+  text-decoration: none;
+  color: inherit;
+  //transition
+}
 
-// .link:hover,
-// .link:focus {
-// }
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
+}
 
 .list {
   margin: 0;

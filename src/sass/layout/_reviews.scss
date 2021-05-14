@@ -20,7 +20,7 @@
   font-size: 24px;
   line-height: 2.71;
   text-align: center;
-  color: #2e2520;
+  color: var(--main-text-color);
 }
 
 .container-reviews__name {
@@ -31,7 +31,7 @@
   font-size: 14px;
   line-height: 4.64;
   text-align: center;
-  color: #2e2520;
+  color: var(--main-text-color);
 }
 
 .response {
@@ -46,7 +46,7 @@
   font-size: 16px;
   line-height: 1.25;
 
-  color: #2e2520;
+ color: var(--main-text-color);
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 768px) {

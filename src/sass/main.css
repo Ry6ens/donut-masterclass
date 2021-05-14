@@ -1,6 +1,6 @@
 :root {
-  --main-bg: #fffff9;
-  --secondary-bg: #fef3e4;
+  --main-bg-color: #fffff9;
+  --secondary-bg-color: #fef3e4;
   --main-text-color: #2e2520;
   --accent-text-color: #876655;
   --icon-color: #674d40;
@@ -25,6 +25,10 @@ html {
 
 body {
   font-family: var(--main-font), sans-serif;
+  font-size: 18px;
+  line-height: 1.22;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
 }
 
 h1,
@@ -35,6 +39,16 @@ h5,
 h6,
 p {
   margin-top: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
 }
 
 .list {
@@ -58,5 +72,32 @@ p {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.conteiner {
+  background-color: #f55a5a;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .conteiner {
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    max-width: 634px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .conteiner {
+    max-width: 822px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

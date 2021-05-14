@@ -9,6 +9,8 @@
 
 .header-conteiner {
   display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .header-button {
@@ -22,6 +24,14 @@
 }
 
 .bg-conteiner {
+  @media screen and (max-width: 768px) {
+    background-image: url(../images/bg-image/mobile/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/bg-image/mobile/header-bg@2x.png);
+    }
+  }
   @media screen and (min-width: 769px) {
     background-image: url(../images/bg-image/tablet/header-bg.png);
     background-repeat: no-repeat;

@@ -3,12 +3,10 @@
   margin-left: 38px;
 }
 .navigation-list__link {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
+  font-family: var(--main-font);
   font-size: 18px;
   line-height: 1.22;
-  color: #2e2520;
+  color: var(--main-text-color);
 }
 
 .navigation-list__item {

@@ -1,4 +1,12 @@
 :root {
+  --main-bg: #fffff9;
+  --secondary-bg: #fef3e4;
+  --main-text-color: #2e2520;
+  --accent-text-color: #876655;
+  --icon-color: #674d40;
+  --main-accent: #ab816c;
+  --light-accent: #fff;
+  --dark-accent: #000;
   --main-font: 'Montserrat', sans-serif;
   --decorative-font: 'Caveat Brush', cursive;
 }
@@ -16,7 +24,7 @@ html {
 }
 
 body {
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
 }
 
 h1,

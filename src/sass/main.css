@@ -12,15 +12,13 @@
 }
 
 html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -74,6 +72,10 @@ p {
   overflow: hidden;
 }
 
+button {
+  border: none;
+}
+
 .conteiner {
   margin-left: auto;
   margin-right: auto;
@@ -100,8 +102,6 @@ p {
 }
 
 .navigation-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 38px;
 }
@@ -161,8 +161,6 @@ p {
 }
 
 .header-conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 

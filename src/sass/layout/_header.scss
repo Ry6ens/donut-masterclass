@@ -56,19 +56,34 @@
   }
 }
 
+// .bg-image-conteiner {
+//   @media screen and (max-width: 767.98px) {
+//     width: 129px;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 305px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     width: 568px;
+//   }
+// }
+
 .bg-image {
   position: absolute;
   @media screen and (max-width: 767.98px) {
-    top: -30px;
-    left: -20px;
+    top: 0px;
+    left: -15px;
+    width: 129.69px;
   }
   @media screen and (min-width: 768px) {
     top: 0;
-    right: -20px;
+    right: 130px;
+    width: 377.89px;
   }
   @media screen and (min-width: 1280px) {
-    top: 0;
+    top: 0px;
     right: 0;
+    width: 793px;
   }
 }
 

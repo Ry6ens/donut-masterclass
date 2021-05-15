@@ -1,12 +1,12 @@
 .logo {
-  width: 158px;
-  height: 71px;
+  // width: 158px;
+  // height: 71px;
 
   @media screen and (max-width: 767.98px) {
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
     margin: auto;
+    width: 113px;
+    height: 48px;
   }
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 96px;

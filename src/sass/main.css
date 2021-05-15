@@ -7,17 +7,19 @@
   --main-accent: #ab816c;
   --light-accent: #fff;
   --dark-accent: #000;
-  --main-font: 'Montserrat', sans-serif;
-  --decorative-font: 'Caveat Brush', cursive;
+  --main-font: "Montserrat", sans-serif;
+  --decorative-font: "Caveat Brush", cursive;
 }
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -136,6 +138,8 @@ p {
 }
 
 .navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-left: 38px;
 }
@@ -180,12 +184,6 @@ p {
   }
 }
 
-@media screen and (max-width: 1279px) {
-  .header__nav {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 1280px) {
   .header__nav {
     display: block;
@@ -193,6 +191,8 @@ p {
 }
 
 .header-conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -219,7 +219,9 @@ p {
   }
 }
 
-@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (max-width: 768px) and (min-resolution: 192dpi),
+  screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .bg-conteiner {
     background-image: url(../images/bg-image/mobile/header-bg@2x.png);
   }
@@ -233,7 +235,9 @@ p {
   }
 }
 
-@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 769px) and (min-resolution: 192dpi),
+  screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .bg-conteiner {
     background-image: url(../images/bg-image/tablet/header-bg@2x.png);
   }
@@ -248,7 +252,9 @@ p {
   }
 }
 
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1280px) and (min-resolution: 192dpi),
+  screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .bg-conteiner {
     background-image: url(../images/header/desktop/spoon@2x.png), url(../images/bg-image/desktop/header-bg@2x.png);
   }

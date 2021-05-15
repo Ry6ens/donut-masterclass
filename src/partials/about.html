@@ -1,30 +1,42 @@
 
 <section class="about-us">
     <picture>
-        <source srcset="images/about/mobile/about.png 1x, images/about/mobile/about@2x.png 2x">
+        <source srcset="images/about/desktop/about.webp 1x, images/about/desktop/about@2x.webp 2x" 
+        media="(min-width:1200px)">
+        <source srcset="images/about/desktop/about.png 1x, images/about/desktop/about@2x.png 2x" 
+        media="(min-width:1200px)">
 
-        <source srcset="images/about/desktop/about.png 1x, images/about/desktop/about@2x.png 2x"
-            media="(min-width:768px)">
+        <source srcset="images/about/tablet/about.webp 1x, images/about/tablet/about@2x.webp 2x" 
+        media="(min-width:768px)">
+        <source srcset="images/about/tablet/about.png 1x, images/about/tablet/about@2x.png 2x" 
+        media="(min-width:768px)">
 
+        <source srcset="images/about/mobile/about.webp 1x, images/about/mobile/about@2x.webp 2x"
+        media="(min-width:380px)">
+        <source srcset="images/about/mobile/about.png 1x, images/about/mobile/about@2x.png 2x"
+        media="(min-width:380px)">
 
+        
         <img class="about-us__image" src="images/about/mobile/about.png" width="290">
     </picture>
 
-    <h2 class="about-us__title">About us</h2>
-
-    <p class="about-us__text">
-
-        Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will
-        save the
-        world! <br> <br>
-
-        Eva has been baking since she was six years old and over the last 49 years, she has created hundreds of cakes
-        for
-        weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for
-        excellence.
-
-    </p>
-
-    <button type="button" class="about-us__button">Read more</button>
+    <div>
+        <h2 class="about-us__title">About us</h2>
+        
+        <p class="about-us__text">
+        
+            Oh My Donut is the shop which adores tasty deserts and spend hours to create sophisticated donuts which will
+            save the
+            world! <br> <br>
+        
+            Eva has been baking since she was six years old and over the last 49 years, she has created hundreds of cakes
+            for
+            weddings and has baked for many celebrities. Eva and our shop have received multiple awards & recognition for
+            excellence.
+        
+        </p>
+        
+        <button type="button" class="about-us__button">Read more</button>
+    </div>
 
 </section>

@@ -3,6 +3,20 @@
   padding-right: 15px;
   text-align: center;
 
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    padding-left: 11px;
+    padding-right: 67px;
+    min-height: 358px;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   padding-left: 71px;
+  //   padding-right: 229px;
+  //   min-height: 546px;
+  // }
+
   & .about-us__title {
     font-family: Caveat Brush;
     font-style: normal;
@@ -12,6 +26,10 @@
     text-align: center;
     color: #2e2520;
     font-weight: 400;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   & .about-us__text {
@@ -23,6 +41,18 @@
     color: #2e2520;
     text-align: left;
     margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      min-width: 336px;
+      min-height: 242px;
+    }
+
+    // @media screen and (min-width: 1200px) {
+    //   min-width: 392px;
+    //   min-height: 374px;
+    //   font-size: 18px;
+    //   line-height: 22px;
+    // }
   }
 
   & .about-us__button {
@@ -44,7 +74,13 @@
 }
 
 .about-us__image {
-  width: 100%;
-  height: auto;
-  max-width: 560px;
+  @media screen and (min-width: 768px) {
+    min-width: 330px;
+    margin-right: 25px;
+  }
+
+  // @media screen and (min-width: 1200px) {
+  //   min-width: 512px;
+  //   margin-right: 76px;
+  // }
 }

@@ -3,10 +3,17 @@
   margin-left: 38px;
 }
 .navigation-list__link {
-  font-family: var(--main-font);
-  font-size: 18px;
-  line-height: 1.22;
-  color: var(--main-text-color);
+  @media screen and (max-width: 1279px) {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 500;
+  }
+  @media screen and (min-width: 1280px) {
+    font-family: var(--main-font);
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--main-text-color);
+  }
 }
 
 .navigation-list__item {
@@ -14,5 +21,8 @@
   padding-bottom: 25px;
 }
 .navigation-list__item:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 0;
+  @media screen and (min-width: 1280px) {
+    margin-right: 50px;
+  }
 }

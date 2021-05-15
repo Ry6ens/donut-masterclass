@@ -12,11 +12,11 @@
 
 .header-conteiner {
   display: flex;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     padding-top: 5px;
     padding-bottom: 35px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     padding-top: 27px;
     padding-bottom: 15px;
   }
@@ -27,7 +27,7 @@
 }
 
 .bg-conteiner {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     background-image: url(../images/bg-image/mobile/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -35,7 +35,7 @@
       background-image: url(../images/bg-image/mobile/header-bg@2x.png);
     }
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     background-image: url(../images/bg-image/tablet/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -58,11 +58,11 @@
 
 .bg-image {
   position: absolute;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     top: -30px;
     left: -20px;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     top: 0;
     right: -20px;
   }
@@ -73,7 +73,7 @@
 }
 
 .bg-image-spoon {
-  @media screen and (max-width: 1279px) {
+  @media screen and (max-width: 1279.98px) {
     display: none;
   }
   @media screen and (min-width: 1280px) {

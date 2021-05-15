@@ -62,8 +62,13 @@
       text-align: center;
     }
     &::before {
-      background-image: url();
-      background-size: 190px;
+      content: '';
+      display: block;
+      height: 85px;
+      background-image: url('../images/svg-icons/logo.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 25px;
     }
   }
   @media screen and (min-width: 1280px) {

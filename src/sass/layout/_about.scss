@@ -1,3 +1,16 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+    max-width: 634px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 822px;
+  }
+}
+
 .about-us {
   padding-left: 15px;
   padding-right: 15px;
@@ -6,53 +19,79 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    padding-left: 11px;
-    padding-right: 67px;
-    min-height: 358px;
+    margin-left: 11px;
+    margin-right: 66px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 690px;
   }
 
-  // @media screen and (min-width: 1200px) {
-  //   padding-left: 71px;
-  //   padding-right: 229px;
-  //   min-height: 546px;
-  // }
+  @media screen and (min-width: 1200px) {
+    margin-left: 71px;
+    margin-right: 229px;
+    max-width: 980px;
+  }
+
+  .about-us__box {
+    @media screen and (min-width: 768px) {
+      max-width: 336px;
+      padding-top: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      max-width: 392px;
+      padding-top: 70px;
+    }
+  }
 
   & .about-us__title {
-    font-family: Caveat Brush;
+    font-family: var(--decorative-font);
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 1.16;
     text-align: center;
-    color: #2e2520;
-    font-weight: 400;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
 
     @media screen and (min-width: 768px) {
       text-align: left;
     }
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 20px;
+      font-size: 36px;
+      line-height: 1.81;
+    }
   }
 
   & .about-us__text {
-    font-family: Montserrat;
+    font-family: var(--main-font);
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 1.25;
-    color: #2e2520;
+    color: var(--main-text-color);
     text-align: left;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 
-    @media screen and (min-width: 768px) {
-      min-width: 336px;
-      min-height: 242px;
+    #more {
+      display: none;
     }
 
-    // @media screen and (min-width: 1200px) {
-    //   min-width: 392px;
-    //   min-height: 374px;
-    //   font-size: 18px;
-    //   line-height: 22px;
-    // }
+    @media screen and (min-width: 768px) {
+      width: 336px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 392px;
+      height: 374px;
+      font-size: 18px;
+      line-height: 22px;
+      #more {
+        display: inline;
+      }
+    }
   }
 
   & .about-us__button {
@@ -60,16 +99,27 @@
     border: none;
     cursor: pointer;
 
-    padding: 10px 0;
+    padding: 5px 0;
 
-    font-family: Caveat Brush;
+    font-family: var(--decorative-font);
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 1.18;
 
-    color: #ab816c;
+    color: var(--main-accent);
     background-color: transparent;
+
+    &:hover {
+      color: var(--accent-text-color);
+    }
+    &:active {
+      color: var(--icon-color);
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: none;
+    }
   }
 }
 
@@ -79,8 +129,8 @@
     margin-right: 25px;
   }
 
-  // @media screen and (min-width: 1200px) {
-  //   min-width: 512px;
-  //   margin-right: 76px;
-  // }
+  @media screen and (min-width: 1200px) {
+    min-width: 512px;
+    margin-right: 76px;
+  }
 }

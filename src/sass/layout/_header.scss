@@ -1,11 +1,14 @@
-.header__nav {
-  @media screen and (max-width: 1279px) {
-    display: none;
-  }
-  @media screen and (min-width: 1280px) {
-    display: block;
-  }
-}
+// .header__nav {
+//   @media screen and (max-width: 1279px) {
+//     display: none;
+//     &.is-open {
+//       display: flex;
+//     }
+//   }
+//   @media screen and (min-width: 1280px) {
+//     display: block;
+//   }
+// }
 
 .header-conteiner {
   display: flex;
@@ -20,16 +23,6 @@
   @media screen and (min-width: 1280px) {
     padding-top: 30px;
     padding-bottom: 30px;
-  }
-}
-
-.header-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  border: none;
-  @media screen and (min-width: 1280px) {
-    display: none;
   }
 }
 

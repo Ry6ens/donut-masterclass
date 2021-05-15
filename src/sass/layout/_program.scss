@@ -85,6 +85,14 @@
 .grid {
    display: flex;
    flex-wrap: wrap;
+   margin-top: -30px;
+   margin-left: -30px;
+}
+
+.grid-item {
+   flex-basis: calc((100% - 30px * 2) / 2);
+   margin-top: 30px;
+   margin-left: 30px;
 }
 
 .content-box,

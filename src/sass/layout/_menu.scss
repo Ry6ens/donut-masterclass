@@ -50,6 +50,7 @@
 .navigation-menu-list {
   @media screen and (max-width: 1279px) {
     display: none;
+
     &.is-open {
       position: absolute;
       top: 0;
@@ -77,17 +78,25 @@
     display: inline-flex;
   }
 }
+
 .header-button {
-  position: absolute;
-  top: 15px;
-  right: 15px;
+  position: relative;
+  top: 0;
+  right: 0;
+
+  //   top: 15px;
+  //   right: 15px;
+
   border: none;
   padding: 0;
+  line-height: 0;
   background-color: transparent;
+
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
+
 .header-button .icon--close {
   display: none;
 }

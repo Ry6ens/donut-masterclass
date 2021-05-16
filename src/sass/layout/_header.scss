@@ -1,15 +1,3 @@
-// .header__nav {
-//   @media screen and (max-width: 1279px) {
-//     display: none;
-//     &.is-open {
-//       display: flex;
-//     }
-//   }
-//   @media screen and (min-width: 1280px) {
-//     display: block;
-//   }
-// }
-
 .bg-conteiner {
   position: relative;
   background-repeat: no-repeat;
@@ -47,16 +35,18 @@
 
 .header-conteiner {
   display: flex;
+  justify-content: space-between;
 
   @media screen and (max-width: 767.98px) {
     padding-top: 5px;
     padding-bottom: 35px;
   }
   @media screen and (min-width: 768px) {
-    padding-top: 27px;
+    padding-top: 25px;
     padding-bottom: 15px;
   }
   @media screen and (min-width: 1280px) {
+    justify-content: flex-start;
     padding-top: 30px;
     padding-bottom: 30px;
   }
@@ -67,14 +57,20 @@
 
   @media screen and (max-width: 767.98px) {
     top: 0px;
-    left: -15px;
-    width: 129.69px;
+    // left: -15px;
+    // width: 129.69px;
+    left: 0;
+    width: 120px;
   }
 
   @media screen and (min-width: 768px) {
+    // top: 0;
+    // right: 130px;
+    // width: 377px;
+
     top: 0;
-    right: 130px;
-    width: 377.89px;
+    right: 27%;
+    width: 380px;
   }
   @media screen and (min-width: 1280px) {
     // top: 0px;

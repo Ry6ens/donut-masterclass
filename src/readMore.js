@@ -1,7 +1,7 @@
-let btn = document.querySelector('#btn');
+let btn = document.querySelector('.about-us__button');
 btn.onclick = function () {
-  let more = document.getElementById("more");
-  let btn = document.getElementById("btn");
+  let more = document.querySelector(".more");
+  let btn = document.querySelector(".about-us__button");
   if (more.style.display === "inline") {
     btn.innerHTML = "Read More";
     more.style.display = "none"

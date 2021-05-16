@@ -8,6 +8,12 @@
   @media screen and (min-width: 320px) {
     max-width: 626px;
   }
+
+    @media screen and (min-width: 768px) {
+    max-width: 626px;
+    padding:0;
+  }
+
 }
 
 .container-reviews__title {
@@ -49,10 +55,12 @@
 }
 
 .container-reviews__text {
+ 
+  
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 15px;
+  margin: 0;
 
   font-style: normal;
   font-weight: 400;
@@ -63,20 +71,31 @@
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 768px) {
-     margin-bottom: 35px;
+   position: absolute;  
+  top:85%;
+  left: 50%;
+  transform: translate(-50%, -50%);  
+
+    min-width: 626px;
+    //  margin-bottom: 35px;
+
+     
    
   }
   
    @media screen and (min-width: 1280px) {
-    margin-bottom: 35px;
+    
+
+    // margin-bottom: 35px;
     font-size: 18px;
     line-height: 1.22;
+
   }
 
 }
 
 .pagination {
-  
+  display: block;
  
   font-size: 14px;
   line-height: 1.21;
@@ -113,22 +132,23 @@
 }
 
 .container-reviews__list{
- position: relative;
-
+ 
+   
   padding: 0;
     @media screen and (min-width:768px) {
-
+      position: relative;
+    height:400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
-      margin: 0;
+    margin-bottom: 15px;
     
   }
  @media screen and (min-width:1280px) {
     
     justify-content: space-between;
-
+  height:460px;
         
   }
 
@@ -151,7 +171,8 @@
 
 .container-reviews__item{
   padding: 0;
- 
+  // width: 100%;
+  
 }
 
 
@@ -159,6 +180,10 @@
   .container-reviews__item--elisabeth,
   .container-reviews__item--john{
     display: none;
+  }
+  .container-reviews__img--will{
+     min-width: 110px;
+      min-height: 110px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -169,15 +194,31 @@
       .container-reviews__img--john,
 .container-reviews__img--elisabeth{
   display: block;
-  max-height: 110px; 
+   min-width: 110px;
+      min-height: 110px;
+  // height: 100%; 
+  // width: 100%;
 } 
-    
+
+     .container-reviews__img--will{
+     min-width: 186px;
+      min-height: 186px;
+  }
   }
 
   @media screen and (min-width: 1280px) {
   .container-reviews__item:not(:last-child){
     margin:0 ;
      
+  }
+        .container-reviews__img--john,
+.container-reviews__img--elisabeth{
+      min-width: 136px;
+      min-height: 136px;
+    }
+        .container-reviews__img--will{
+     min-width: 234px;
+      min-height: 234px;
   }
 }
 .container-reviews__star--min,
@@ -186,17 +227,19 @@
   text-align: center;
   color: #AB816C;
   margin: 0;
+  letter-spacing:0;
+ 
 }
 .container-reviews__item--will{
+  position: relative;
   display: flex;
   flex-direction: column;
 }
 
 
 
-@media screen and (min-width: 320px){
-  .container-reviews__anime,
-  .container-reviews__anime--last{
+@media screen and (max-width: 767.89px){
+  .container-reviews__anime{
     display: none;
   }
 }
@@ -207,26 +250,15 @@
   display: block;
   position: absolute;
 
-  top: 60%;
-  left:20%;
+  top: 95%;
+  left:70%;
   transform: translate(-50%, -50%);
   animation-name: spin;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-.container-reviews__anime--last{
-  display: block;
-    position: absolute;
 
-  top: 57%;
-  left: 61%;
-  transform: translate(-50%, -50%);
-  animation-name: spin;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
 @keyframes spin {
   0% {
     transform: rotate(0deg);

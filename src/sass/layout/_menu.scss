@@ -6,7 +6,7 @@
   color: var(--main-text-color);
   margin-bottom: 3px;
   width: 224px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     margin: auto;
   }
 
@@ -19,12 +19,14 @@
 }
 
 .hero__conteiner {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767.98px) {
     width: 100%;
     text-align: center;
     padding-bottom: 10px;
+    position: relative;
+    z-index: 100;
   }
-  @media screen and (min-width: 769px) {
+  @media screen and (min-width: 768px) {
     padding-bottom: 80px;
   }
   @media screen and (min-width: 1280px) {

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DONUT MASTERCLASS</title>
@@ -14,18 +15,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/main.css">
-  </head>
-  <body>
-    
+</head>
+
+<body>
+
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/header.html"></include>
     <include src="./partials/menu.html"></include>
     <main>
-      <include src="./partials/about.html"></include>
-      <include src="./partials/program.html"></include>
-      <include src="./partials/reviews.html"></include>
-      <include src="./partials/registration.html"></include>
-      <include src="./partials/contact.html"></include>
+        <include src="./partials/about.html"></include>
+        <include src="./partials/program.html"></include>
+        <include src="./partials/reviews.html"></include>
+        <include src="./partials/registration.html"></include>
+        <include src="./partials/contact.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
   
@@ -33,6 +35,7 @@
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
     <script src="./menu.js"></script>
+ <script src="./mobile-menu.js"></script>
     <script src="./readmore-prog.js"></script>
     <script src="./readMore.js"></script>
   </body>

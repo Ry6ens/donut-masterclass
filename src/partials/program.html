@@ -1,9 +1,28 @@
-<section class="program">
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Заголовок страницы</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous" />
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="../sass/main.css">
+</head>
+
+<body>
+   <section class="program"> 
+     
    <div class="conteiner flexbox">
       
       <div class="content-box">
-         <h2 class="program__title">program</h2>
-         <p class="program__text">
+         <h2 class="program__title">Program</h2>
+         <p class="program__text program__text--mb">
             Indulge in this immersive sweet treat experience with The Chef Donut Queen
             in her New York donut shop!
          </p>
@@ -16,10 +35,15 @@
             <li class="program__item"> Secret receipt of cooking from Eva</li>
             <li class="program__item"> All products are included in the price</li>
          </ul>
-         <p class="program__text">Come with your dear people and friends
+         <p more-text-program class="read-more program__text">Come with your dear people and friends
          and you will spend an unforgettable time and
          will become a real professional
          in donuts cooking!</p>
+
+         <button class="program__button" more-button-program aria-expanded="false" aria-controls="more">
+            <p class="open">Read More</p>
+            <p class="close">Less</p>
+         </button>
       </div>
       
       <ul class="program__list--details list grid">
@@ -27,31 +51,34 @@
             <h3 class="program__text--details">Type of the event</h3>
             <p class="program__data">Cooking classes</p>
             <svg class="program__icon">
-               <use class="icon-chef-hat" href="./images/svg-icons/sprite.svg#icon-chef-hat"></use>
+               <use class="icon-people" href="../images/svg-icons/sprite.svg#icon-chef-hat"></use>
             </svg>
          </li>
          <li class="program__item--details grid-item">
             <h3 class="program__text--details">Number of guests</h3>
             <p class="program__data">1 to 20</p>
             <svg class="program__icon">
-               <use class="icon-people" href="./images/svg-icons/sprite.svg#icon-people"></use>
+               <use class="icon-people" href="../images/svg-icons/sprite.svg#icon-people"></use>
             </svg>
          </li>
          <li class="program__item--details grid-item">
             <h3 class="program__text--details">Time of the event</h3>
             <p class="program__data">18:30 (2.5 hours)</p>
             <svg class="program__icon">
-               <use class="icon-clock" href="./images/svg-icons/sprite.svg#icon-clock"></use>
+               <use class="icon-clock" href="../images/svg-icons/sprite.svg#icon-clock"></use>
             </svg>
          </li>
          <li class="program__item--details grid-item">
             <h3 class="program__text--details">The host speaks</h3>
             <p class="program__data">English, French</p>
             <svg class="program__icon">
-               <use class="icon-chat"href="./images/svg-icons/sprite.svg#icon-chat"></use>
+               <use class="icon-chat"href="../images/svg-icons/sprite.svg#icon-chat"></use>
             </svg>
          </li>
       </ul>
       
    </div>
 </section>
+<script src="../js/readmore.js"></script>
+</body>
+</html>

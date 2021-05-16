@@ -3,13 +3,27 @@
 }
 
 .flexbox {
-   display: flex;
-   justify-content: space-between;
+   @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+.content-box {
+   @media screen and (max-width: 767px) {
+      padding-bottom: 34px;
+   }
 }
 
 .program__item::before {
    content: "\276F";
 }
+
+// .program__list--details {
+//    @media screen and (max-width: 767px) {
+//       padding-top: 34px;
+//    }
+// }
 
 .program__item--details {
    // width: 190px;
@@ -24,23 +38,43 @@
    justify-content: flex-end;
    align-items: center;
    z-index: 100;
+   background-color: green;
+}
+
+.program__item--details:nth-child(odd) {
+   transform: translateY(-17.5px);
+}
+.program__item--details:nth-child(even) {
+   transform: translateY(17.5px);
 }
 
 .program__item--details {
    position: relative;
 }
 
-.program__item--details::before {
+.program__list--details:nth-child(1) .program__item--details:before {
    content: "";
    width: 80px;
    height: 90px;
-   background-image: url(./../images/program/desktop/host.png);
+   background-image: url(./../images/program/desktop/number.png);
    background-repeat: no-repeat;
    background-size: contain;
    position: absolute;
    top: -25%;
    left: 25%;
 }
+
+// .program__item--details:nth-child(2) .program__item--details:before {
+//    content: "";
+//    width: 80px;
+//    height: 90px;
+//    background-image: url(./../images/program/desktop/number.png);
+//    background-repeat: no-repeat;
+//    background-size: contain;
+//    position: absolute;
+//    top: -25%;
+//    left: 25%;
+// }
 
 .program__item--details:nth-child(1) svg {
    width: 25px;
@@ -82,30 +116,31 @@
    margin-bottom: 17px;
 }
 
-// .grid {
-//    display: flex;
-//    flex-wrap: wrap;
-//    margin-top: -30px;
-//    margin-left: -30px;
-// }
+.grid {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: -30px;
+   margin-left: -30px;
+}
 
-// .grid-item {
-//    flex-basis: calc((100% - 30px * 2) / 2);
-//    margin-top: 30px;
-//    margin-left: 30px;
-// }
+.grid-item {
+   flex-basis: calc((100% - 30px * 2) / 2);
+   margin-top: 30px;
+   margin-left: 30px;
+}
 
+.program__list--details,
 .content-box {
    flex-basis: calc((100% - 38px) / 2);
 }
 
-.grid {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-}
+// .grid {
+//    display: flex;
+//    flex-wrap: wrap;
+//    justify-content: space-between;
+// }
 
-.grid-item {
-   width: 180px;
-   height: 180px;
-}
+// .grid-item {
+//    width: 180px;
+//    height: 180px;
+// }

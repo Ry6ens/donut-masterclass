@@ -1,0 +1,137 @@
+.about {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-left: 11px;
+    margin-right: 66px;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 690px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 71px;
+    margin-right: 229px;
+    max-width: 980px;
+  }
+
+  .about-us__box {
+    @media screen and (min-width: 768px) {
+      max-width: 336px;
+      padding-top: 10px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      max-width: 392px;
+      padding-top: 70px;
+    }
+  }
+
+  & .about-us__title {
+    font-family: var(--decorative-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 20px;
+      font-size: 36px;
+      line-height: 1.81;
+    }
+  }
+
+  & .about-us__text {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--main-text-color);
+    text-align: left;
+    margin-bottom: 0px;
+
+    .more {
+      display: none;
+    }
+    // .more.is-open {
+    //   display: inline;
+    // }
+
+    @media screen and (min-width: 768px) {
+      width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 392px;
+      height: 374px;
+      font-size: 18px;
+      line-height: 22px;
+      .more {
+        display: inline;
+      }
+    }
+  }
+
+  & .about-us__button {
+    display: block;
+    border: none;
+    cursor: pointer;
+
+    padding: 5px 0;
+
+    font-family: var(--decorative-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.18;
+
+    color: var(--main-accent);
+    background-color: transparent;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: var(--accent-text-color);
+    }
+    &:active {
+      color: var(--icon-color);
+    }
+
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
+}
+// .about-us__button .close {
+//   display: none;
+// }
+
+// .about-us__button.is-open .close {
+//   display: block;
+// }
+
+// .about-us__button.is-open .open {
+//   display: none;
+// }
+
+.about-us__image {
+  @media screen and (min-width: 768px) {
+    min-width: 330px;
+    margin-right: 25px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    min-width: 512px;
+    margin-right: 76px;
+  }
+}

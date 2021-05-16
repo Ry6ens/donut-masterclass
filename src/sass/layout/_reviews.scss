@@ -71,22 +71,20 @@
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 768px) {
-   position: absolute;  
+  position: absolute;  
   top:85%;
   left: 50%;
   transform: translate(-50%, -50%);  
 
-    min-width: 626px;
-    //  margin-bottom: 35px;
+  min-width: 626px;
+   
 
      
    
   }
   
    @media screen and (min-width: 1280px) {
-    
-
-    // margin-bottom: 35px;
+     
     font-size: 18px;
     line-height: 1.22;
 
@@ -136,7 +134,7 @@
    
   padding: 0;
     @media screen and (min-width:768px) {
-      position: relative;
+    position: relative;
     height:400px;
     display: flex;
     flex-wrap: wrap;
@@ -171,7 +169,7 @@
 
 .container-reviews__item{
   padding: 0;
-  // width: 100%;
+ 
   
 }
 
@@ -193,15 +191,14 @@
   }
       .container-reviews__img--john,
 .container-reviews__img--elisabeth{
-  display: block;
-   min-width: 110px;
+      display: block;
+      min-width: 110px;
       min-height: 110px;
-  // height: 100%; 
-  // width: 100%;
+  
 } 
 
      .container-reviews__img--will{
-     min-width: 186px;
+      min-width: 186px;
       min-height: 186px;
   }
   }
@@ -217,7 +214,7 @@
       min-height: 136px;
     }
         .container-reviews__img--will{
-     min-width: 234px;
+      min-width: 234px;
       min-height: 234px;
   }
 }

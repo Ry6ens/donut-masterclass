@@ -10,8 +10,44 @@
 //   }
 // }
 
+.bg-conteiner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: 767.98px) {
+    background-image: url(../images/bg-image/mobile/header-bg.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/bg-image/mobile/header-bg@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bg-image/tablet/header-bg.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/bg-image/tablet/header-bg@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/header/desktop/spoon.png),
+      url(../images/bg-image/desktop/header-bg.png);
+    background-size: contain, cover;
+    background-position: 0 65px, top left;
+    background-repeat: no-repeat, no-repeat;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/header/desktop/spoon@2x.png),
+        url(../images/bg-image/desktop/header-bg@2x.png);
+    }
+  }
+}
+
 .header-conteiner {
   display: flex;
+
   @media screen and (max-width: 767.98px) {
     padding-top: 5px;
     padding-bottom: 35px;
@@ -26,52 +62,28 @@
   }
 }
 
-.bg-conteiner {
-  @media screen and (max-width: 767.98px) {
-    background-image: url(../images/bg-image/mobile/header-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/bg-image/mobile/header-bg@2x.png);
-    }
-  }
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/bg-image/tablet/header-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/bg-image/tablet/header-bg@2x.png);
-    }
-  }
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/header/desktop/spoon.png),
-      url(../images/bg-image/desktop/header-bg.png);
-    background-size: contain, cover;
-    background-position: 0 65px, top left;
-    background-repeat: no-repeat, no-repeat;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/header/desktop/spoon@2x.png),
-        url(../images/bg-image/desktop/header-bg@2x.png);
-    }
-  }
-}
-
 .bg-image {
   position: absolute;
+
   @media screen and (max-width: 767.98px) {
     top: 0px;
     left: -15px;
     width: 129.69px;
   }
+
   @media screen and (min-width: 768px) {
     top: 0;
     right: 130px;
     width: 377.89px;
   }
   @media screen and (min-width: 1280px) {
+    // top: 0px;
+    // right: 0;
+    // width: 793px;
+
     top: 0px;
     right: 0;
-    width: 793px;
+    width: 719px;
   }
 }
 

@@ -221,7 +221,7 @@ input {
 
 @media screen and (min-width: 1280px) {
   .navigation-list__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 }
 
@@ -248,6 +248,51 @@ input {
   .logo {
     width: 158px;
     height: 71px;
+  }
+}
+
+.bg-conteiner {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg-conteiner {
+    background-image: url(../images/bg-image/mobile/header-bg.png);
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
+  .bg-conteiner {
+    background-image: url(../images/bg-image/mobile/header-bg@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bg-conteiner {
+    background-image: url(../images/bg-image/tablet/header-bg.png);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .bg-conteiner {
+    background-image: url(../images/bg-image/tablet/header-bg@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .bg-conteiner {
+    background-image: url(../images/header/desktop/spoon.png), url(../images/bg-image/desktop/header-bg.png);
+    background-size: contain, cover;
+    background-position: 0 65px, top left;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .bg-conteiner {
+    background-image: url(../images/header/desktop/spoon@2x.png), url(../images/bg-image/desktop/header-bg@2x.png);
   }
 }
 
@@ -278,49 +323,6 @@ input {
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .bg-conteiner {
-    background-image: url(../images/bg-image/mobile/header-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
-  .bg-conteiner {
-    background-image: url(../images/bg-image/mobile/header-bg@2x.png);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .bg-conteiner {
-    background-image: url(../images/bg-image/tablet/header-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .bg-conteiner {
-    background-image: url(../images/bg-image/tablet/header-bg@2x.png);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .bg-conteiner {
-    background-image: url(../images/header/desktop/spoon.png), url(../images/bg-image/desktop/header-bg.png);
-    background-size: contain, cover;
-    background-position: 0 65px, top left;
-    background-repeat: no-repeat, no-repeat;
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .bg-conteiner {
-    background-image: url(../images/header/desktop/spoon@2x.png), url(../images/bg-image/desktop/header-bg@2x.png);
-  }
-}
-
 .bg-image {
   position: absolute;
 }
@@ -345,7 +347,7 @@ input {
   .bg-image {
     top: 0px;
     right: 0;
-    width: 793px;
+    width: 719px;
   }
 }
 
@@ -424,10 +426,10 @@ input {
 }
 
 @media screen and (max-width: 1279px) {
-  .navigation-list {
+  .navigation-menu-list {
     display: none;
   }
-  .navigation-list.is-open {
+  .navigation-menu-list.is-open {
     position: absolute;
     top: 0;
     left: 0;
@@ -444,7 +446,7 @@ input {
     height: 100vh;
     text-align: center;
   }
-  .navigation-list::before {
+  .navigation-menu-list::before {
     content: '';
     display: block;
     height: 85px;
@@ -457,7 +459,7 @@ input {
 }
 
 @media screen and (min-width: 1280px) {
-  .navigation-list {
+  .navigation-menu-list {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;

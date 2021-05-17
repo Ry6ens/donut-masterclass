@@ -125,8 +125,10 @@
 .registration-subtext {
     margin-bottom: 15px;
 
+    text-align: center;
+
     @media screen and (min-width: 320px) {
-        width: 290px;
+        width: 220px;
 
         font-style: normal;
         font-weight: normal;
@@ -135,8 +137,12 @@
         color: #2E2520;
     }
 
+    @media screen and (min-width: 320px) {
+        text-align: left;
+    }
+
     @media screen and (min-width: 1200px) {
-        width: 290px;
+        width: 220px;
 
         font-style: normal;
         font-weight: normal;

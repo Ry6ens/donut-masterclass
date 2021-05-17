@@ -359,6 +359,14 @@ input {
 @media screen and (min-width: 768px) {
   .bg-image {
     top: 0;
+    right: 20%;
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .bg-image {
+    top: 0;
     right: 26%;
     width: 380px;
   }
@@ -874,7 +882,7 @@ input {
 }
 
 .program__item::before {
-  content: "\276F";
+  content: '\276F';
 }
 
 .read-more {
@@ -960,7 +968,7 @@ input {
 }
 
 .program__item--details::before {
-  content: "";
+  content: '';
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
@@ -1497,8 +1505,79 @@ input {
   }
 }
 
+.reg-conteiner {
+  position: relative;
+}
+
 .registration-title {
+  font-family: var(--decorative-font);
   margin-bottom: 30px;
+  font-size: 24px;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .registration-title {
+    font-size: 36px;
+  }
+}
+
+.registration-donut {
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (max-width: 767.98px) {
+  .registration-donut {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration-donut {
+    display: block;
+    top: 10px;
+    left: -80px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .registration-donut {
+    top: 10px;
+    left: -150px;
+  }
+}
+
+.registration-party {
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (max-width: 767.98px) {
+  .registration-party {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration-party {
+    display: block;
+    width: 200px;
+    top: 15px;
+    left: 340px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .registration-party {
+    top: 75px;
+    left: 450px;
+  }
+}
+
+.registration-all {
+  background: var(--main-bg-color_);
 }
 
 @media screen and (min-width: 768px) {
@@ -1506,6 +1585,7 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background: #FFFFF9;
     -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
             box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px;

@@ -1,9 +1,9 @@
 .flexbox {
-   @media screen and (min-width: 768px) {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .content-box {
@@ -13,106 +13,106 @@
 }
 
 .program__title {
-   font-family: var(--decorative-font);
-   font-weight: 400;
-   font-size: 24px;
-   line-height: 2.71;
-   text-align: center;
-   margin: 0;
+  font-family: var(--decorative-font);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 2.71;
+  text-align: center;
+  margin: 0;
 
-   @media screen and (min-width: 768px) {
-      text-align: left;
-   }
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 
-   @media screen and (min-width: 1280px) {
-      font-size: 36px;
-      line-height: 1.8;
-   }
+  @media screen and (min-width: 1280px) {
+    font-size: 36px;
+    line-height: 1.8;
+  }
 }
 
 .program__text {
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.25;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 
-   @media screen and (min-width: 1280px) {
-      font-size: 18px;
-      line-height: 1.22;
-   }
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .program__text--mb {
-   margin: 0;
-   margin-bottom: 10px;
+  margin: 0;
+  margin-bottom: 10px;
 
-   @media screen and (min-width: 1280px) {
-      margin-bottom: 21px;
-   }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 21px;
+  }
 }
 
 .program__list {
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.25;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
 
-   @media screen and (min-width: 1280px) {
-      font-size: 18px;
-      line-height: 1.22;
-   }
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 .program__item {
-   margin-bottom: 10px;
+  margin-bottom: 10px;
 
-   @media screen and (min-width: 1280px) {
-      margin-bottom: 15px;
-   }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+  }
 }
 
 .program__item::before {
-   content: "\276F";
+  content: '\276F';
 }
 
 .read-more {
-   display: none;
+  display: none;
 }
 .read-more.is-open {
-   display: inline;
+  display: inline;
 }
 
 @media screen and (min-width: 1280px) {
-   .read-more {
-      display: inline;
-   }
+  .read-more {
+    display: inline;
+  }
 }
 
 .program__button {
-   display: block;
-   border: none;
-   cursor: pointer;
-   padding: 5px 0;
-   font-family: var(--decorative-font);
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 1.18;
-   color: var(--main-accent);
-   background-color: transparent;
+  display: block;
+  border: none;
+  cursor: pointer;
+  padding: 5px 0;
+  font-family: var(--decorative-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.18;
+  color: var(--main-accent);
+  background-color: transparent;
 
-   @media screen and (min-width: 1280px) {
-      display: none;
-   }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .program__button .close {
-   display: none;
+  display: none;
 }
 
 .program__button.is-open .close {
-   display: block;
+  display: block;
 }
 
 .program__button.is-open .open {
-   display: none;
+  display: none;
 }
 
 .program__item--details {
@@ -131,10 +131,10 @@
 }
 
 .program__item--details:nth-child(odd) {
-   transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 .program__item--details:nth-child(even) {
-   transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 // .program__item--details {
@@ -154,152 +154,152 @@
 }
 
 .program__item--details:nth-child(1)::before {
-   width: 77px;
-   height: 85px;
-   background-image: url(./../images/program/mobile/type.png);
+  width: 77px;
+  height: 85px;
+  background-image: url(./../images/program/mobile/type.png);
 
-   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(./../images/program/mobile/type@2x.png);
-   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(./../images/program/mobile/type@2x.png);
+  }
 
-   @media screen and (min-width: 768px) {
-      background-image: url(./../images/program/tablet/type.png);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-         background-image: url(./../images/program/tablet/type@2x.png);
-      }
-   }
-   @media screen and (min-width: 1280px) {
-      width: 97px;
-      height: 107px;
-      background-image: url(./../images/program/desktop/type.png);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-         background-image: url(./../images/program/desktop/type@2x.png);
-      }
-   }
+  @media screen and (min-width: 768px) {
+    background-image: url(./../images/program/tablet/type.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/program/tablet/type@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 97px;
+    height: 107px;
+    background-image: url(./../images/program/desktop/type.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/program/desktop/type@2x.png);
+    }
+  }
 }
 
 .program__item--details:nth-child(2)::before {
-   width: 65px;
-   height: 72px;
-   background-image: url(./../images/program/mobile/number.png);
+  width: 65px;
+  height: 72px;
+  background-image: url(./../images/program/mobile/number.png);
 
-   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(./../images/program/mobile/number@2x.png);
-   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(./../images/program/mobile/number@2x.png);
+  }
 
-   @media screen and (min-width: 768px) {
-      background-image: url(./../images/program/tablet/number.png);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-         background-image: url(./../images/program/tablet/number@2x.png);
-      }
-   }
-   @media screen and (min-width: 1280px) {
-      width: 83px;
-      height: 92px;
-      background-image: url(./../images/program/desktop/number.png);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-         background-image: url(./../images/program/desktop/number@2x.png);
-      }
-   }
+  @media screen and (min-width: 768px) {
+    background-image: url(./../images/program/tablet/number.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/program/tablet/number@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 83px;
+    height: 92px;
+    background-image: url(./../images/program/desktop/number.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/program/desktop/number@2x.png);
+    }
+  }
 }
 
 .program__item--details:nth-child(3)::before {
-   width: 70px;
-   height: 77px;
-   background-image: url(./../images/program/mobile/time.png);
+  width: 70px;
+  height: 77px;
+  background-image: url(./../images/program/mobile/time.png);
 
-   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(./../images/program/mobile/time@2x.png);
-   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(./../images/program/mobile/time@2x.png);
+  }
 
-   @media screen and (min-width: 768px) {
-      background-image: url(./../images/program/tablet/time.png);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-         background-image: url(./../images/program/tablet/time@2x.png);
-      }
-   }
-   @media screen and (min-width: 1280px) {
-      width: 88px;
-      height: 97px;
-      background-image: url(./../images/program/desktop/time.png);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-         background-image: url(./../images/program/desktop/time@2x.png);
-      }
-   }
+  @media screen and (min-width: 768px) {
+    background-image: url(./../images/program/tablet/time.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/program/tablet/time@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 88px;
+    height: 97px;
+    background-image: url(./../images/program/desktop/time.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/program/desktop/time@2x.png);
+    }
+  }
 }
 
 .program__item--details:nth-child(4)::before {
-   width: 66px;
-   height: 73px;
-   background-image: url(./../images/program/mobile/host.png);
+  width: 66px;
+  height: 73px;
+  background-image: url(./../images/program/mobile/host.png);
 
-   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(./../images/program/mobile/host@2x.png);
-   }
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(./../images/program/mobile/host@2x.png);
+  }
 
-   @media screen and (min-width: 768px) {
-      background-image: url(./../images/program/tablet/host.png);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-         background-image: url(./../images/program/tablet/host@2x.png);
-      }
-   }
-   @media screen and (min-width: 1280px) {
-      width: 83px;
-      height: 92px;
-      background-image: url(./../images/program/desktop/host.png);
-      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-         background-image: url(./../images/program/desktop/host@2x.png);
-      }
-   }
+  @media screen and (min-width: 768px) {
+    background-image: url(./../images/program/tablet/host.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/program/tablet/host@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    width: 83px;
+    height: 92px;
+    background-image: url(./../images/program/desktop/host.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(./../images/program/desktop/host@2x.png);
+    }
+  }
 }
 
 .program__item--details:nth-child(1) svg {
-   width: 25px;
-   height: 23px;
+  width: 25px;
+  height: 23px;
 }
 
 .program__item--details:nth-child(2) svg {
-   width: 26px;
-   height: 24px;
+  width: 26px;
+  height: 24px;
 }
 
 .program__item--details:nth-child(3) svg {
-   width: 25px;
-   height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .program__item--details:nth-child(4) svg {
-   width: 32px;
-   height: 21px;
+  width: 32px;
+  height: 21px;
 }
 
 .program__text--details {
-   font-family: var(--decorative-font);
-   font-weight: 400;
-   font-size: 18px;
-   line-height: 1.27;
-   margin: 0;
-   margin-bottom: 16px;
-   color: var(--dark-accent);
+  font-family: var(--decorative-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.27;
+  margin: 0;
+  margin-bottom: 16px;
+  color: var(--dark-accent);
 
-   @media screen and (min-width: 1280px) {
-      font-size: 24px;
-      line-height: 1.25;
-   }
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }
 
 .program__data {
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1.21;
-   color: var(--dark-accent);
-   margin: 0;
-   margin-bottom: 17px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.21;
+  color: var(--dark-accent);
+  margin: 0;
+  margin-bottom: 17px;
 
-   @media screen and (min-width: 1280px) {
-      font-size: 16px;
-      line-height: 1.25;
-   }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
 .grid {
@@ -334,7 +334,7 @@
 
 .program__list--details,
 .content-box {
-   flex-basis: calc((100% - 38px) / 2);
+  flex-basis: calc((100% - 38px) / 2);
 }
 
 // .grid {

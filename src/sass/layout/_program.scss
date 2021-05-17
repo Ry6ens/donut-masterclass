@@ -120,17 +120,16 @@
 }
 
 .program__item--details {
+  background: #fef3e4;
+  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+  border-radius: 50%;
+  padding: 12px 17px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  z-index: 100; // ??
-  padding-bottom: 12px;
-  //   padding: 12px 17px;
-  text-align: center;
-  border-radius: 50%;
-  box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
-  background: #fef3e4;
+  z-index: 100;
 }
 
 .program__item--details:nth-child(odd) {
@@ -169,6 +168,7 @@
       background-image: url(./../images/program/tablet/type@2x.png);
     }
   }
+
   @media screen and (min-width: 1280px) {
     width: 97px;
     height: 107px;
@@ -307,16 +307,14 @@
 .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  //   justify-content: flex-end;
   margin-top: -50px;
-  //   margin-left: -30px;
-  background-color: rgb(222, 238, 79);
+  margin-left: -30px;
 }
 
 .grid-item {
-  flex-basis: calc((100% - 30px) / 2);
-  height: 142px;
-  //   margin-left: 30px;
+  flex-basis: calc((100% - 30px * 2) / 2);
+  margin-left: 30px;
 
   @media screen and (max-width: 767.98px) {
     margin-top: 50px;
@@ -324,10 +322,6 @@
 
   @media screen and (min-width: 768px) {
     margin-top: 50px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    height: 180px;
   }
 
   &:nth-child(3),

@@ -8,11 +8,13 @@
     font-size: 24px;
     line-height: 1.25;
     font-weight: 500;
+
     &:hover,
     :focus {
       color: var(--accent-text-color);
     }
   }
+
   @media screen and (min-width: 1280px) {
     font-family: var(--main-font);
     font-size: 18px;
@@ -22,7 +24,7 @@
 }
 
 .navigation-list__item {
-  @media screen and (max-width: 1279,98px) {
+  @media screen and (max-width: 1279px) {
     padding-top: 0;
     padding-bottom: 45px;
     &:first-child {
@@ -38,6 +40,6 @@
 .navigation-list__item:not(:last-child) {
   margin-right: 0;
   @media screen and (min-width: 1280px) {
-    margin-right: 20px;
+    margin-right: 50px;
   }
 }

@@ -223,7 +223,7 @@ input {
   }
 }
 
-@media screen and (max-width: (1279, 98px)) {
+@media screen and (max-width: 1279px) {
   .navigation-list__item {
     padding-top: 0;
     padding-bottom: 45px;
@@ -246,7 +246,7 @@ input {
 
 @media screen and (min-width: 1280px) {
   .navigation-list__item:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 50px;
   }
 }
 

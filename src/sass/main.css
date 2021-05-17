@@ -210,7 +210,7 @@ input {
   }
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: (1279, 98px)) {
   .navigation-list__item {
     padding-top: 0;
     padding-bottom: 45px;
@@ -233,7 +233,7 @@ input {
 
 @media screen and (min-width: 1280px) {
   .navigation-list__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 }
 
@@ -260,6 +260,35 @@ input {
   .logo {
     width: 158px;
     height: 71px;
+  }
+}
+
+.section__title {
+  margin-bottom: 10px;
+  font-family: var(--decorative-font);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .section__title {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+}
+
+.section__subtitle {
+  margin-bottom: 20px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+  .section__subtitle {
+    font-size: 18px;
+    line-height: 1.22;
   }
 }
 

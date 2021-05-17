@@ -233,7 +233,7 @@ input {
 
 @media screen and (min-width: 1280px) {
   .navigation-list__item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 20px;
   }
 }
 
@@ -315,9 +315,6 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -329,18 +326,58 @@ input {
 
 @media screen and (min-width: 768px) {
   .header-conteiner {
-    padding-top: 25px;
+    padding-top: 27px;
     padding-bottom: 15px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .header-conteiner {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .bg-conteiner {
+    background-image: url(../images/bg-image/mobile/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
+  .bg-conteiner {
+    background-image: url(../images/bg-image/mobile/header-bg@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bg-conteiner {
+    background-image: url(../images/bg-image/tablet/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .bg-conteiner {
+    background-image: url(../images/bg-image/tablet/header-bg@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .bg-conteiner {
+    background-image: url(../images/header/desktop/spoon.png), url(../images/bg-image/desktop/header-bg.png);
+    background-size: contain, cover;
+    background-position: 0 65px, top left;
+    background-repeat: no-repeat, no-repeat;
+  }
+}
+
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .bg-conteiner {
+    background-image: url(../images/header/desktop/spoon@2x.png), url(../images/bg-image/desktop/header-bg@2x.png);
   }
 }
 
@@ -378,39 +415,6 @@ input {
     right: 0;
     width: 719px;
   }
-}
-
-.header-button {
-  position: relative;
-  top: 0;
-  right: 0;
-  border: none;
-  padding: 0;
-  line-height: 0;
-  background-color: transparent;
-  z-index: 300;
-}
-
-@media screen and (min-width: 1280px) {
-  .header-button {
-    display: none;
-  }
-}
-
-.header-button .icon--close {
-  display: none;
-}
-
-.header-button .icon--menu {
-  display: block;
-}
-
-.header-button.is-open .icon--close {
-  display: block;
-}
-
-.header-button.is-open .icon--menu {
-  display: none;
 }
 
 .hero__title {
@@ -477,12 +481,17 @@ input {
 
 @media screen and (max-width: 1279px) {
   .navigation-list {
-    display: none;
+    position: fixed;
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    pointer-events: none;
   }
   .navigation-list.is-open {
+    opacity: 1;
     position: fixed;
     overflow-y: scroll;
-    z-index: 105;
+    z-index: 200;
     top: 0;
     left: 0;
     display: -webkit-box;
@@ -497,6 +506,13 @@ input {
     width: 100%;
     height: 100vh;
     text-align: center;
+    pointer-events: auto;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transition: opacity 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15), -webkit-transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15);
+    transition: opacity 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15), -webkit-transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15);
+    transition: opacity 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15), transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15);
+    transition: opacity 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15), transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15), -webkit-transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15);
   }
 }
 
@@ -510,7 +526,7 @@ input {
 
 .header-button {
   position: fixed;
-  z-index: 108;
+  z-index: 205;
   top: 15px;
   right: 15px;
   border: none;
@@ -538,10 +554,10 @@ input {
 
 .header-button.is-open:hover,
 .header-button.is-open:focus .icon--close {
-  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 0ms;
-  transition: -webkit-transform 500ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 0ms;
-  transition: transform 500ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 0ms;
-  transition: transform 500ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 0ms, -webkit-transform 500ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 0ms;
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
+  transition: -webkit-transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
+  transition: transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
+  transition: transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms, -webkit-transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
   -webkit-transform: rotate(-360deg);
           transform: rotate(-360deg);
   -webkit-transform-origin: center center;
@@ -552,22 +568,41 @@ input {
   display: none;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 767px) {
   .menu-thumb {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     position: fixed;
-    z-index: 106;
+    z-index: 205;
     overflow: hidden;
-    top: -50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    width: 190px;
-    height: 85px;
-    -webkit-transition: -webkit-transform 1000ms cubic-bezier(0.3, 0.79, 0.92, 0.15);
-    transition: -webkit-transform 1000ms cubic-bezier(0.3, 0.79, 0.92, 0.15);
-    transition: transform 1000ms cubic-bezier(0.3, 0.79, 0.92, 0.15);
-    transition: transform 1000ms cubic-bezier(0.3, 0.79, 0.92, 0.15), -webkit-transform 1000ms cubic-bezier(0.3, 0.79, 0.92, 0.15);
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .menu-thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 205;
+    overflow: hidden;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 25px;
   }
 }
 
@@ -578,8 +613,17 @@ input {
 }
 
 .navigation-list.is-open + .menu-thumb {
-  -webkit-transform: translate(-50%, 300%);
-          transform: translate(-50%, 300%);
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
+  transition: -webkit-transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
+  transition: transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
+  transition: transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms, -webkit-transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.menu-thumb__logo {
+  display: block;
+  position: fixed;
 }
 
 @media screen and (max-width: 767.98px) {

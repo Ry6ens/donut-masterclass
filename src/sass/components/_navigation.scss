@@ -1,43 +1,77 @@
+// .header__nav {
+//   @media screen and (max-width: 1279.98px) {
+//     display: none;
+
+//     &.is-open {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       position: fixed;
+//       top: 0;
+//       left: 0;
+//       right: 0;
+//       height: 100vh;
+//       z-index: 200;
+//       background-color: rgba(254, 243, 228, 0.9);
+//     }
+
+//     &.is-open .navigation-list::before {
+//       content: '';
+//       display: block;
+//       height: 85px;
+//       background-image: url('../images/svg-icons/logo.svg');
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       margin-top: 25px;
+//       margin-bottom: 40px;
+//     }
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     margin-left: 38px;
+//   }
+// }
+
 .navigation-list {
-    display: flex;
-    margin-left: 38px;
+  display: flex;
+  margin-left: 38px;
 }
 
 .navigation-list__link {
-    @media screen and (max-width: 1279px) {
-        font-size: 24px;
-        line-height: 1.25;
-        font-weight: 500;
-        &:hover,
-         :focus {
-            color: var(--accent-text-color);
-        }
+  @media screen and (max-width: 1279px) {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 500;
+    &:hover,
+    :focus {
+      color: var(--accent-text-color);
     }
-    @media screen and (min-width: 1280px) {
-        font-family: var(--main-font);
-        font-size: 18px;
-        line-height: 1.22;
-        color: var(--main-text-color);
-    }
+  }
+  @media screen and (min-width: 1280px) {
+    font-family: var(--main-font);
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--main-text-color);
+  }
 }
 
 .navigation-list__item {
-    @media screen and (max-width: 1279px) {
-        padding-top: 0;
-        padding-bottom: 45px;
-        &:first-child {
-            padding-top: 150px;
-        }
+  @media screen and (max-width: 1279px) {
+    padding-top: 0;
+    padding-bottom: 45px;
+    &:first-child {
+      padding-top: 150px;
     }
-    @media screen and (min-width: 1280px) {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
 }
 
 .navigation-list__item:not(:last-child) {
-    margin-right: 0;
-    @media screen and (min-width: 1280px) {
-        margin-right: 50px;
-    }
+  margin-right: 0;
+  @media screen and (min-width: 1280px) {
+    margin-right: 50px;
+  }
 }

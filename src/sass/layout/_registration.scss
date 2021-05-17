@@ -1,15 +1,71 @@
+.reg-conteiner {
+    position: relative;
+}
+
 .registration-title {
+    font-family: var(--decorative-font);
     margin-bottom: 30px;
+    font-size: 24px;
+
+    text-align: center;
+
+    color: var(--main-text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
+}
+
+.registration-donut {
+    position: absolute;
+    z-index: -1;
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        top: 10px;
+        left: -80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 10px;
+        left: -150px;
+    }
+}
+
+.registration-party {
+    position: absolute;
+    z-index: -1;
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        width: 200px;
+        top: 15px;
+        left: 340px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 75px;
+        left: 450px;
+    }
 }
 
 .registration-all {
+    background: var(--main-bg-color_);
 
     @media screen and (min-width: 768px) {
         display: flex;
 
+        background:  #FFFFF9;
         box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
         border-radius: 150px;
     }
+
     
 }
 

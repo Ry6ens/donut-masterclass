@@ -721,6 +721,7 @@ input {
 
 .about {
   text-align: center;
+  background-color: #66df37;
 }
 
 @media screen and (min-width: 768px) {

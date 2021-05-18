@@ -12,6 +12,6 @@
   --decorative-font: 'Caveat Brush', cursive;
 
   --duration: 300ms;
-  --cubic: (0.3, 0.79, 0.92, 0.15);
+  --cubic: cubic-bezier(0.3, 0.79, 0.92, 0.15);
   --delay: 300ms;
 }

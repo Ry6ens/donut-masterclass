@@ -78,6 +78,9 @@
 }
 
 .header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   z-index: 205;
   top: 15px;

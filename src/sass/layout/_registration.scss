@@ -1,5 +1,6 @@
 .reg-conteiner {
   position: relative;
+  z-index: 2;
 }
 
 .registration-title {
@@ -36,8 +37,8 @@
 }
 
 .registration-party {
-  //   position: absolute;
-  // z-index: -1;
+  position: absolute;
+  z-index: -1;
   @media screen and (max-width: 767.98px) {
     display: none;
   }

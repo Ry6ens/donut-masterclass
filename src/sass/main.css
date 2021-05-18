@@ -1626,6 +1626,7 @@ input {
 
 .reg-conteiner {
   position: relative;
+  z-index: 2;
 }
 
 .registration-title {
@@ -1666,6 +1667,11 @@ input {
     top: 10px;
     left: -150px;
   }
+}
+
+.registration-party {
+  position: absolute;
+  z-index: -1;
 }
 
 @media screen and (max-width: 767.98px) {

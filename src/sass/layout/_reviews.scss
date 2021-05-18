@@ -9,15 +9,13 @@
     max-width: 626px;
   }
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     max-width: 626px;
-    padding:0;
+    padding: 0;
   }
-
 }
 
 .container-reviews__title {
-
   margin-bottom: 15px;
   font-family: var(--decorative-font);
   font-style: normal;
@@ -29,7 +27,7 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 10px;
   }
-   @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 24px;
     font-size: 36px;
   }
@@ -44,10 +42,9 @@
   line-height: 2.64;
   text-align: center;
   color: var(--main-text-color);
-      @media screen and (min-width: 1280px) {
-       font-size: 16px;
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
   }
- 
 }
 
 .response {
@@ -55,8 +52,6 @@
 }
 
 .container-reviews__text {
- 
-  
   width: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -71,200 +66,169 @@
   margin-right: auto;
   margin-left: auto;
   @media screen and (min-width: 768px) {
-  position: absolute;  
-  top:85%;
-  left: 50%;
-  transform: translate(-50%, -50%);  
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  min-width: 626px;
-   
-
-     
-   
+    min-width: 626px;
   }
-  
-   @media screen and (min-width: 1280px) {
-     
+
+  @media screen and (min-width: 1280px) {
     font-size: 18px;
     line-height: 1.22;
-
   }
-
 }
 
 .pagination {
   display: block;
- 
+
   font-size: 14px;
   line-height: 1.21;
-    color: #AB816C;
+  color: #ab816c;
 
-    @media screen and (min-width:1280px) {
-      font-size: 16px;
-      line-height: 1.25;
-    }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    line-height: 1.25;
+  }
 }
 
-.container-reviews__item{
+.container-reviews__item {
   list-style: none;
 }
 
-.container-reviews{
- 
+.container-reviews {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 28px;
 
-    @media screen and (min-width:768px) {
-
+  @media screen and (min-width: 768px) {
     padding-bottom: 40px;
-    
   }
-    @media screen and (min-width:1280px) {
-    
-     padding-bottom: 68px;
-
-        
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 68px;
   }
-
 }
 
-.container-reviews__list{
- 
-   
+.container-reviews__list {
   padding: 0;
-    @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     position: relative;
-    height:400px;
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
     margin-bottom: 15px;
-    
   }
- @media screen and (min-width:1280px) {
-    
+  @media screen and (min-width: 1280px) {
     justify-content: space-between;
-  height:460px;
-        
+    height: 460px;
   }
-
-
 }
 
- @media screen and (min-width:768px) {
-    .container-reviews__item:nth-child(2){
-      padding-top: 19px;
-    }
-
+@media screen and (min-width: 768px) {
+  .container-reviews__item:nth-child(2) {
+    padding-top: 19px;
   }
+}
 
-   @media screen and (min-width:1200px) {
-    .container-reviews__item:nth-child(2){
-      padding-top: 24px;
-    }
-    
+@media screen and (min-width: 1200px) {
+  .container-reviews__item:nth-child(2) {
+    padding-top: 24px;
   }
+}
 
-.container-reviews__item{
+.container-reviews__item {
   padding: 0;
- 
-  
 }
-
 
 @media screen and (max-width: 767.89px) {
   .container-reviews__item--elisabeth,
-  .container-reviews__item--john{
+  .container-reviews__item--john {
     display: none;
   }
-  .container-reviews__img--will{
-     min-width: 110px;
-      min-height: 110px;
+  .container-reviews__img--will {
+    min-width: 110px;
+    min-height: 110px;
   }
 }
 @media screen and (min-width: 768px) {
-  .container-reviews__item:not(:last-child){
-    margin-right:38px ;
-     
+  .container-reviews__item:not(:last-child) {
+    margin-right: 38px;
   }
-      .container-reviews__img--john,
-.container-reviews__img--elisabeth{
-      display: block;
-      min-width: 110px;
-      min-height: 110px;
-  
-} 
-
-     .container-reviews__img--will{
-      min-width: 186px;
-      min-height: 186px;
-  }
+  .container-reviews__img--john,
+  .container-reviews__img--elisabeth {
+    display: block;
+    min-width: 110px;
+    min-height: 110px;
   }
 
-  @media screen and (min-width: 1280px) {
-  .container-reviews__item:not(:last-child){
-    margin:0 ;
-     
+  .container-reviews__img--will {
+    min-width: 186px;
+    min-height: 186px;
   }
-        .container-reviews__img--john,
-.container-reviews__img--elisabeth{
-      min-width: 136px;
-      min-height: 136px;
-    }
-        .container-reviews__img--will{
-      min-width: 234px;
-      min-height: 234px;
+}
+
+@media screen and (min-width: 1280px) {
+  .container-reviews__item:not(:last-child) {
+    margin: 0;
+  }
+  .container-reviews__img--john,
+  .container-reviews__img--elisabeth {
+    min-width: 136px;
+    min-height: 136px;
+  }
+  .container-reviews__img--will {
+    min-width: 234px;
+    min-height: 234px;
   }
 }
 .container-reviews__star--min,
-.container-reviews__star{
+.container-reviews__star {
   font-size: 24px;
   text-align: center;
-  color: #AB816C;
+  color: #ab816c;
   margin: 0;
-  letter-spacing:0;
- 
+  letter-spacing: 0;
 }
-.container-reviews__item--will{
+.container-reviews__item--will {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-
-
-@media screen and (max-width: 767.89px){
-  .container-reviews__anime{
+@media screen and (max-width: 767.89px) {
+  .container-reviews__anime {
     display: none;
   }
 }
 
-@media screen and (min-width: 768px){
-  
-.container-reviews__anime{
-  display: block;
-  position: absolute;
+@media screen and (min-width: 768px) {
+  .container-reviews__anime {
+    display: block;
+    position: absolute;
 
-  top: 95%;
-  left:70%;
-  transform: translate(-50%, -50%);
-  animation-name: spin;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
+    top: 95%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
 
-  100% {
-    transform: rotate(360deg);
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
-
-
+.container-reviews__img {
+  overflow: hidden;
+  border-radius: 50%;
 }

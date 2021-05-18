@@ -2,5 +2,21 @@
   <div class="conteiner">
     <h2 class="section__title">Contact</h2>
     <p class="section__subtitle">We will answer any question!</p>
+    <form class="form contact__form">
+      <div class="form__wrap">
+        <input
+          type="email"
+          name="mail"
+          class="form__input"
+          placeholder="Email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+        />
+      </div>
+      <div class="form__wrap">
+        <input type="text" name="question" class="form__input" placeholder="Type your question" />
+      </div>
+      <button type="submit" class="button form__button">Send</button>
+    </form>
   </div>
 </section>

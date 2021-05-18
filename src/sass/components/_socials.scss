@@ -4,7 +4,7 @@
   & .icon {
     height: 19px;
     width: 24px;
-    fill: var(--main-text-color);
+    fill: currentColor;
   }
   @media screen and (max-width: 767.98px) {
     margin-top: 44px;
@@ -21,4 +21,15 @@
 
 .social-list__item:not(:last-child) {
   margin-right: 12px;
+}
+
+.social-list__link {
+  display: block;
+  transition: color var(--duration) var(--cubic) var(--delay),
+    transform var(--duration) var(--cubic) var(--delay);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 }

@@ -63,9 +63,6 @@
     .more {
       display: none;
     }
-    // .more.is-open {
-    //   display: inline;
-    // }
 
     @media screen and (min-width: 768px) {
       width: 336px;
@@ -112,17 +109,6 @@
     }
   }
 }
-// .about-us__button .close {
-//   display: none;
-// }
-
-// .about-us__button.is-open .close {
-//   display: block;
-// }
-
-// .about-us__button.is-open .open {
-//   display: none;
-// }
 
 .about-us__image {
   @media screen and (min-width: 768px) {

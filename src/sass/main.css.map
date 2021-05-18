@@ -7,7 +7,7 @@
         "base/_common.scss",
         "base/_conteiner.scss",
         "components/_body-bg.scss",
-        "components/hero-bg.scss",
+        "components/_hero-bg.scss",
         "components/_button.scss",
         "components/_form.scss",
         "components/_socials.scss",

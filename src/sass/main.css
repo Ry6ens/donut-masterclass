@@ -556,7 +556,6 @@ input {
 }
 
 .header-conteiner {
-  background-color: #32e7c0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -671,10 +670,6 @@ input {
 
 .header-button.is-open .icon--menu {
   display: none;
-}
-
-.hero__conteiner {
-  background-color: #e4d615;
 }
 
 @media screen and (max-width: 767.98px) {

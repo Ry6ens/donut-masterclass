@@ -1,5 +1,4 @@
 .hero__conteiner {
-  background-color: rgb(228, 214, 21);
   @media screen and (max-width: 767.98px) {
     text-align: center;
     padding-bottom: 10px;
@@ -18,7 +17,6 @@
   font-family: var(--decorative-font);
   font-size: 30px;
   line-height: 1.27;
-  // color: var(--main-text-color);
 
   @media screen and (max-width: 767.98px) {
     margin: auto;

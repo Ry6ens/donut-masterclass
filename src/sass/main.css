@@ -834,6 +834,10 @@ input {
   }
 }
 
+.program {
+  padding-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .flexbox {
     display: -webkit-box;
@@ -939,6 +943,10 @@ input {
 .open,
 .close {
   margin-bottom: 0;
+}
+
+.program__list--details {
+  margin-bottom: 21px;
 }
 
 @media screen and (min-width: 320px) {

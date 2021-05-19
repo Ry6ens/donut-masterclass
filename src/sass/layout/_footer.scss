@@ -65,6 +65,5 @@
 }
 
 .address__link {
-  transition: color var(--duration) var(--cubic) var(--delay),
-    transform var(--duration) var(--cubic) var(--delay);
+  transition: color var(--duration) var(--cubic) var(--delay);
 }

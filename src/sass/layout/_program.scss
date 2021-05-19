@@ -13,8 +13,6 @@
 }
 
 // .program__text {
-
-//   font-weight: 400;
 //   font-size: 16px;
 //   line-height: 1.25;
 
@@ -33,15 +31,15 @@
   }
 }
 
-// .program__list {
-//   font-size: 16px;
-//   line-height: 1.25;
+.program__list {
+  font-size: 16px;
+  line-height: 1.25;
 
-//   @media screen and (min-width: 1280px) {
-//     font-size: 18px;
-//     line-height: 1.22;
-//   }
-// }
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
+}
 
 .program__item {
   margin-bottom: 10px;

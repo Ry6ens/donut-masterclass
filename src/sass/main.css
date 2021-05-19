@@ -1573,84 +1573,24 @@ input {
 
 .reg-conteiner {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 767.98px) {
   .reg-conteiner {
+    max-width: 290px;
     padding-top: 40px;
     padding-bottom: 40px;
-    background: #FFFFF9;
+    background: #fffff9;
     -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
             box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px 150px 0px 0px;
   }
 }
 
-.registration-title {
-  font-family: var(--decorative-font);
+.registration-section__title {
   margin-bottom: 30px;
-  font-size: 24px;
-  text-align: center;
-  color: var(--main-text-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .registration-title {
-    font-size: 36px;
-  }
-}
-
-.registration-donut {
-  position: absolute;
-  z-index: -1;
-}
-
-@media screen and (max-width: 767.98px) {
-  .registration-donut {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .registration-donut {
-    display: block;
-    top: 10px;
-    left: -80px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .registration-donut {
-    top: 10px;
-    left: -150px;
-  }
-}
-
-.registration-party {
-  position: absolute;
-  z-index: -1;
-}
-
-@media screen and (max-width: 767.98px) {
-  .registration-party {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .registration-party {
-    display: block;
-    width: 200px;
-    top: 15px;
-    left: 340px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .registration-party {
-    top: 75px;
-    left: 450px;
-  }
 }
 
 .registration-all {
@@ -1670,7 +1610,6 @@ input {
 }
 
 .registration-info {
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -1688,9 +1627,9 @@ input {
     padding-top: 20px;
     padding-left: 35px;
     padding-right: 30px;
+    text-align: right;
     border-right: 1px solid rgba(171, 129, 108, 0.5);
     border-bottom: 0;
-    text-align: right;
   }
 }
 
@@ -1731,7 +1670,7 @@ input {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
-  color: #2E2520;
+  color: #2e2520;
   text-align: center;
 }
 

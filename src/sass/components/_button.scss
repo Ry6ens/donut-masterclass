@@ -1,19 +1,17 @@
 .button {
+  min-width: 145px;
   font-family: var(--decorative-font);
   font-size: 18px;
   line-height: 1.21;
-
   text-align: center;
   border: none;
-
-  color: var(--main-bg-color);
-  background-color: var(--main-accent);
   border-radius: 25px;
   padding-left: 46px;
   padding-right: 46px;
   padding-top: 5px;
   padding-bottom: 5px;
-  min-width: 145px;
+  color: var(--main-bg-color);
+  background-color: var(--main-accent);
   cursor: pointer;
 
   transition: background-color var(--duration) var(--cubic) var(--delay);

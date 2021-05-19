@@ -1539,7 +1539,6 @@ input {
 }
 
 .registration-section {
-  background-image: none;
   background-size: 240px 230px, 300px 500px;
   background-repeat: no-repeat;
 }
@@ -1547,8 +1546,7 @@ input {
 @media screen and (min-width: 768px) {
   .registration-section {
     background-image: url(../images/registration/tablet/registration.png), url(../images/registration/tablet/party.png);
-    background-position: left -5px top 70px, right bottom;
-    background-image: rotate(69.49deg);
+    background-position: left 154px top 22px, right 67px bottom -223px;
   }
 }
 
@@ -1561,7 +1559,7 @@ input {
 @media screen and (min-width: 1280px) {
   .registration-section {
     background-image: url(../images/registration/desktop/registration.png), url(../images/registration/desktop/party.png);
-    background-position: left 160px top 40px, right bottom;
+    background-position: left 132px top 6px, right 12px bottom -281px;
   }
 }
 
@@ -1666,11 +1664,8 @@ input {
 
 .registration-subtext {
   margin-bottom: 15px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.25;
-  color: #2e2520;
   text-align: center;
 }
 
@@ -1684,11 +1679,8 @@ input {
 @media screen and (min-width: 1200px) {
   .registration-subtext {
     width: 220px;
-    font-style: normal;
-    font-weight: normal;
     font-size: 18px;
     line-height: 1.22;
-    color: #2e2520;
   }
 }
 

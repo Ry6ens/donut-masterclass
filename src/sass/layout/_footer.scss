@@ -56,9 +56,14 @@
 
   & .icon {
     margin-right: 3px;
+    fill: currentColor;
   }
 }
 
 .address__city {
   margin-bottom: 0;
+}
+
+.address__link {
+  transition: color var(--duration) var(--cubic) var(--delay);
 }

@@ -1,181 +1,177 @@
 .reg-conteiner {
-    position: relative;
+  position: relative;
+  z-index: 2;
 }
 
 .registration-title {
-    font-family: var(--decorative-font);
-    margin-bottom: 30px;
-    font-size: 24px;
+  font-family: var(--decorative-font);
+  margin-bottom: 30px;
+  font-size: 24px;
 
-    text-align: center;
+  text-align: center;
 
-    color: var(--main-text-color);
+  color: var(--main-text-color);
 
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-    }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .registration-donut {
-    position: absolute;
-    z-index: -1;
-    @media screen and (max-width: 767.98px) {
-        display: none;
-    }
+  position: absolute;
+  z-index: -1;
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 
-    @media screen and (min-width: 768px) {
-        display: block;
-        top: 10px;
-        left: -80px;
-    }
+  @media screen and (min-width: 768px) {
+    display: block;
+    top: 10px;
+    left: -80px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        top: 10px;
-        left: -150px;
-    }
+  @media screen and (min-width: 1200px) {
+    top: 10px;
+    left: -150px;
+  }
 }
 
 .registration-party {
-    position: absolute;
-    z-index: -1;
-    @media screen and (max-width: 767.98px) {
-        display: none;
-    }
+  position: absolute;
+  z-index: -1;
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 
-    @media screen and (min-width: 768px) {
-        display: block;
-        width: 200px;
-        top: 15px;
-        left: 340px;
-    }
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 200px;
+    top: 15px;
+    left: 340px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        top: 75px;
-        left: 450px;
-    }
+  @media screen and (min-width: 1200px) {
+    top: 75px;
+    left: 450px;
+  }
 }
 
 .registration-all {
-    background: var(--main-bg-color_);
+  background: var(--main-bg-color_);
 
-    @media screen and (min-width: 768px) {
-        display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
 
-        background:  #FFFFF9;
-        box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-        border-radius: 150px;
-    }
-
-    
+    background: #fffff9;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px;
+  }
 }
 
 .registration-info {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.22;
-    text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
 
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
-    border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  border-left: 0;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 35px;
-        margin-bottom: 35px;
-        padding-top: 20px;
-        padding-left: 35px;
-        padding-right: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 30px;
 
-        border-right: 1px solid rgba(171, 129, 108, 0.5);
-        border-bottom: 0;
+    border-right: 1px solid rgba(171, 129, 108, 0.5);
+    border-bottom: 0;
 
-        text-align: right;
-    }
+    text-align: right;
+  }
 
-    @media screen and (min-width: 1200px) {
-        padding-left: 110px;
+  @media screen and (min-width: 1200px) {
+    padding-left: 110px;
 
-        font-size: 20px;
-        line-height: 1.2;
-    }
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .registration-adress {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
+  font-style: normal;
 
-    font-style: normal;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 35px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 35px;
+  }
 }
 
 .registration-unit {
-    margin-top: 15px;
-    margin-bottom: 45px;
+  margin-top: 15px;
+  margin-bottom: 45px;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 55px;
-        margin-left: 30px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-top: 55px;
+    margin-left: 30px;
+  }
 }
 
 .registration-subtext {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
+  text-align: center;
 
-    text-align: center;
+  @media screen and (min-width: 320px) {
+    width: 220px;
 
-    @media screen and (min-width: 320px) {
-        width: 220px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #2e2520;
+  }
 
-        font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 1.25;
-        color: #2E2520;
-    }
+  @media screen and (min-width: 320px) {
+    text-align: left;
+  }
 
-    @media screen and (min-width: 320px) {
-        text-align: left;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 220px;
 
-    @media screen and (min-width: 1200px) {
-        width: 220px;
-
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 1.22;
-        color: #2E2520;
-    }
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.22;
+    color: #2e2520;
+  }
 }
 
 .registration-form {
-    @media screen and (min-width: 768px) {
-        display: flex;
-    }
-    
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .registration-field {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
 
-    @media screen and (min-width: 1200px) {
-        width: 235px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 235px;
+  }
 }
 
 .form__item {
-    color: var(--main-accent);
+  color: var(--main-accent);
 }
 
 .registration-button {
-    @media screen and (min-width: 768px) {
-        margin-left: 25px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-left: 25px;
+  }
 }

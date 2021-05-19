@@ -1,0 +1,12 @@
+.hero-bg {
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/header/desktop/spoon.png);
+    background-size: 142px 450px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/header/desktop/spoon@2x.png);
+    }
+  }
+}

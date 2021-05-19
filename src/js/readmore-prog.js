@@ -1,18 +1,6 @@
-// function readMore() {
-//     var more = document.getElementById("more");
-//     var btn = document.getElementById("btn");
-//     if (more.style.display === "inline") {
-//         btn.innerHTML = "Read More";
-//         more.style.display = "none"
-//     } else {
-//         btn.innerHTML = "Less";
-//         more.style.display = "inline";
-//     }
-// }
-
 (() => {
-  const menuBtnRef = document.querySelector("[more-button-program]")
-  const mobileMenuRef = document.querySelector("[more-text-program]")
+  const menuBtnRef = document.querySelector(".read-more--program-btn")
+  const mobileMenuRef = document.querySelector(".read-more--program-text")
   menuBtnRef.addEventListener("click", () => {
     const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false
     menuBtnRef.classList.toggle("is-open")

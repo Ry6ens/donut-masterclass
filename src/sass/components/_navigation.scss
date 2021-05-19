@@ -2,27 +2,68 @@
   position: relative;
   display: flex;
   margin-left: 38px;
-}
 
-.navigation-list__link {
   @media screen and (max-width: 1279px) {
-    font-size: 24px;
-    line-height: 1.25;
-    font-weight: 500;
-    transition: color var(--duration) var(--cubic) var(--delay);
+    position: fixed;
+    opacity: 0;
+    transform: scale(0);
+    pointer-events: none;
 
-    &:hover,
-    :focus {
-      color: var(--accent-text-color);
+    &.is-open {
+      opacity: 1;
+      position: fixed;
+      overflow-y: scroll;
+      z-index: 205;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(254, 243, 228, 0.9);
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      pointer-events: auto;
+      transform: scale(1);
+      transition: opacity 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15),
+        transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15);
     }
   }
-
   @media screen and (min-width: 1280px) {
-    font-family: var(--main-font);
-    font-size: 18px;
-    line-height: 1.22;
-    color: var(--main-text-color);
+    display: inline-flex;
   }
+}
+
+.menu-thumb {
+  @media screen and (max-width: 1279.98px) {
+    display: flex;
+    position: fixed;
+    z-index: 205;
+    overflow: hidden;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    justify-content: center;
+    padding-top: 20px;
+    pointer-events: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1279.98px) {
+    padding-top: 25px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.navigation-list.is-open + .menu-thumb {
+  transition: transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
+  transform: translateY(100%);
+}
+
+.menu-thumb__logo {
+  display: block;
+  position: fixed;
 }
 
 .navigation-list__item {
@@ -43,5 +84,26 @@
   margin-right: 0;
   @media screen and (min-width: 1280px) {
     margin-right: 20px;
+  }
+}
+
+.navigation-list__link {
+  @media screen and (max-width: 1279px) {
+    font-size: 24px;
+    line-height: 1.25;
+    font-weight: 500;
+    transition: color var(--duration) var(--cubic) var(--delay);
+
+    &:hover,
+    :focus {
+      color: var(--accent-text-color);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-family: var(--main-font);
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--main-text-color);
   }
 }

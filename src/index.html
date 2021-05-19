@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Заголовок страницы</title>
+    <meta property="og:image" content="./images/header/desktop/header-donuts.png" />
+    <meta property="og:image:secure_url" content="https://nina-antoniuk.github.io/donut-masterclass/" />
+    <meta property="og:image:type" content="image/png" />
+    <!-- <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="300" /> -->
+    <meta property="og:image:alt" content="Donut masterclass" />
+
+    <meta name="twitter:card" content="summary" />
+    <!-- <meta name="twitter:site" content="@flickr" /> -->
+    <meta name="twitter:title" content="Dunut masterclass" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="./images/header/desktop/header-donuts.png" />
+    <title>DONUT MASTERCLASS</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
+    <link rel="icon" href="./images/svg-icons/favicon.ico" sizes="16x16 32x32" type="image/vnd.microsoft.icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./sass/main.css">
-  </head>
-  <body>
-    
-    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
+</head>
+
+<body>
+  <div class="body-bg">
     <include src="./partials/header.html"></include>
-    <include src="./partials/menu.html"></include>
     <main>
+      <include src="./partials/hero.html"></include>
       <include src="./partials/about.html"></include>
       <include src="./partials/program.html"></include>
       <include src="./partials/reviews.html"></include>
@@ -27,9 +40,11 @@
       <include src="./partials/contact.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
-    
-    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+  
     <script src="./index.js"></script>
-    <script src="./menu.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/readmore-prog.js"></script>
+    <script src="./js/readMore.js"></script>
   </body>
 </html>

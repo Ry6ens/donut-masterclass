@@ -6,6 +6,8 @@
 @import './base/conteiner';
 
 // імпорт компонентів
+@import './components/body-bg';
+@import './components/hero-bg';
 @import './components/button';
 @import './components/form';
 @import './components/socials';
@@ -16,6 +18,7 @@
 @import './layout/section';
 @import './layout/header';
 @import './layout/menu';
+@import './layout/hero';
 @import './layout/about';
 @import './layout/program';
 @import './layout/reviews';

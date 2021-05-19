@@ -1554,7 +1554,7 @@ input {
 @media screen and (min-width: 768px) {
   .registration-section {
     background-image: url(../images/registration/tablet/registration.png), url(../images/registration/tablet/party.png);
-    background-position: left 154px top 22px, right 67px bottom -223px;
+    background-position: left 10px top 22px, right -50px bottom -275px;
   }
 }
 

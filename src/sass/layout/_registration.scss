@@ -96,14 +96,12 @@
 
 .registration-all {
   background-color: var(--main-bg-color);
-  text-align: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    text-align-last: left;
     border-radius: 150px;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
   }
@@ -116,11 +114,6 @@
 
 .registration-info {
   font-weight: 500;
-
-  @media screen and (max-width: 767.98px) {
-    text-align: center;
-    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
-  }
 
   @media screen and (min-width: 768px) {
     padding-top: 20px;

@@ -11,10 +11,15 @@ html {
 body {
   margin: 0;
   font-family: var(--main-font), sans-serif;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 16px;
+  line-height: 1.25;
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }
 
 h1,
@@ -58,4 +63,35 @@ p {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.section__title {
+  margin-bottom: 10px;
+  font-family: var(--decorative-font);
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+}
+
+.section__title--align-left {
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
+.section__subtitle {
+  margin-bottom: 20px;
+  line-height: 1.25;
+  text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    line-height: 1.22;
+  }
 }

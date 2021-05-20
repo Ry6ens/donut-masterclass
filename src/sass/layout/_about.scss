@@ -1,20 +1,18 @@
 .about-us__conteiner {
-  text-align: center;
-
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
+    max-width: 690px;
     margin-left: 11px;
     margin-right: 66px;
     padding-left: 0;
     padding-right: 0;
-    max-width: 690px;
   }
 
   @media screen and (min-width: 1280px) {
+    max-width: 980px;
     margin-left: 71px;
     margin-right: 229px;
-    max-width: 980px;
   }
 
   .about-us__box {
@@ -29,31 +27,7 @@
     }
   }
 
-  & .about-us__title {
-    font-family: var(--decorative-font);
-    font-size: 24px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--main-text-color);
-    margin-bottom: 10px;
-
-    @media screen and (min-width: 768px) {
-      text-align: left;
-    }
-
-    @media screen and (min-width: 1280px) {
-      margin-bottom: 20px;
-      font-size: 36px;
-      line-height: 1.81;
-    }
-  }
-
   & .about-us__text {
-    font-family: var(--main-font);
-    font-size: 16px;
-    line-height: 1.25;
-    color: var(--main-text-color);
-    text-align: left;
     margin-bottom: 0px;
 
     .more {

@@ -1,15 +1,15 @@
 .button {
   min-width: 145px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-family: var(--decorative-font);
   font-size: 18px;
   line-height: 1.21;
   text-align: center;
   border: none;
   border-radius: 25px;
-  padding-left: 46px;
-  padding-right: 46px;
-  padding-top: 5px;
-  padding-bottom: 5px;
   color: var(--main-bg-color);
   background-color: var(--main-accent);
   cursor: pointer;

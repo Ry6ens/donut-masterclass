@@ -190,7 +190,7 @@
 @media screen and (min-width: 768px) {
   .container-reviews__anime {
     position: absolute;
-    top: 90%;
+    top: -25%;
     left: 85%;
     display: block;
     transform: translate(-50%, -50%);
@@ -211,13 +211,13 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .container-reviews__anime {
-    top: 100%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-  }
-}
+// @media screen and (min-width: 1280px) {
+//   .container-reviews__anime {
+//     top: 100%;
+//     left: 75%;
+//     transform: translate(-50%, -50%);
+//   }
+// }
 .container-reviews__img {
   border-radius: 50%;
   overflow: hidden;

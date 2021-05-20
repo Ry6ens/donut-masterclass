@@ -70,10 +70,12 @@
   @media screen and (max-width: 1279px) {
     padding-top: 0;
     padding-bottom: 45px;
+
     &:first-child {
       padding-top: 150px;
     }
   }
+
   @media screen and (min-width: 1280px) {
     padding-top: 25px;
     padding-bottom: 25px;

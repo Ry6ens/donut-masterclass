@@ -13,7 +13,6 @@
   color: var(--main-bg-color);
   background-color: var(--main-accent);
   cursor: pointer;
-
   transition: background-color var(--duration) var(--cubic) var(--delay);
 
   &:hover,

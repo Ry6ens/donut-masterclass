@@ -3,12 +3,15 @@
     text-align: center;
     padding-bottom: 10px;
   }
+
   @media screen and (min-width: 768px) {
     padding-bottom: 80px;
   }
+
   @media screen and (min-width: 1280px) {
     padding-bottom: 57px;
   }
+
   & .button:hover,
   & .button:focus {
     color: var(--secondary-bg-color);
@@ -44,6 +47,7 @@
   @media screen and (max-width: 767.98px) {
     margin-bottom: 36px;
   }
+
   @media screen and (min-width: 768px) {
     margin-bottom: 26px;
   }

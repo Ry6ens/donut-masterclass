@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --main-bg-color: #fffff9;
   --secondary-bg-color: #fef3e4;
@@ -878,6 +879,7 @@ input {
   .program__list {
     font-size: 18px;
     line-height: 1.22;
+    margin-bottom: 21px;
   }
 }
 
@@ -943,10 +945,6 @@ input {
 .open,
 .close {
   margin-bottom: 0;
-}
-
-.program__list--details {
-  margin-bottom: 21px;
 }
 
 @media screen and (min-width: 320px) {
@@ -1546,39 +1544,9 @@ input {
   overflow: hidden;
 }
 
-.registration-section {
-  background-size: 240px 230px, 300px 500px;
-  background-repeat: no-repeat;
-}
-
-@media screen and (min-width: 768px) {
-  .registration-section {
-    background-image: url(../images/registration/tablet/registration.png), url(../images/registration/tablet/party.png);
-    background-position: left 10px top 22px, right -50px bottom -275px;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .registration-section {
-    background-image: url(../images/registration/tablet/registration@2x.png), url(../images/registration/tablet/party@2x.png);
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .registration-section {
-    background-image: url(../images/registration/desktop/registration.png), url(../images/registration/desktop/party.png);
-    background-position: left 132px top 6px, right 12px bottom -281px;
-  }
-}
-
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .registration-section {
-    background-image: url(../images/registration/desktop/registration@2x.png), url(../images/registration/desktop/party@2x.png);
-  }
-}
-
 .reg-conteiner {
   position: relative;
+  z-index: 10;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1595,12 +1563,87 @@ input {
   }
 }
 
-.registration-section__title {
+@media screen and (min-width: 768px) {
+  .reg-conteiner::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 197px;
+    height: 202px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(69.49deg);
+            transform: rotate(69.49deg);
+    background-image: url(../images/registration/tablet/donut.png);
+    top: 24px;
+    left: -35px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .reg-conteiner::before {
+    background-image: url(../images/registration/tablet/donut@2x.png);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .reg-conteiner::before {
+    background-image: url(../images/registration/desktop/donut.png);
+    top: 9px;
+    left: -127px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .reg-conteiner::before {
+    background-image: url(../images/registration/desktop/donut@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reg-conteiner::after {
+    content: '';
+    position: absolute;
+    width: 190px;
+    height: 228px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(-47.68deg);
+            transform: rotate(-47.68deg);
+    z-index: -1;
+    background-image: url(../images/registration/tablet/party-confetti.png);
+    top: 158px;
+    right: -6px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .reg-conteiner::after {
+    background-image: url(../images/registration/tablet/party-confetti@2x.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .reg-conteiner::after {
+    background-image: url(../images/registration/tablet/party-confetti.png);
+    top: 184px;
+    right: -27px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .reg-conteiner::after {
+    background-image: url(../images/registration/tablet/party-confetti@2x.png);
+  }
+}
+
+.registration__title {
   margin-bottom: 30px;
 }
 
 .registration-all {
-  background: var(--main-bg-color_);
+  background-color: var(--main-bg-color);
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1608,40 +1651,47 @@ input {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background: #fffff9;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align-last: left;
+    border-radius: 150px;
     -webkit-box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
             box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-    border-radius: 150px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .registration-all {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 }
 
 .registration-info {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  text-align: center;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
-  border-left: 0;
+}
+
+@media screen and (max-width: 767.98px) {
+  .registration-info {
+    text-align: center;
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  }
 }
 
 @media screen and (min-width: 768px) {
   .registration-info {
-    margin-top: 35px;
-    margin-bottom: 35px;
     padding-top: 20px;
-    padding-left: 35px;
     padding-right: 30px;
     text-align: right;
     border-right: 1px solid rgba(171, 129, 108, 0.5);
-    border-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .registration-info {
-    padding-left: 110px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -1649,7 +1699,6 @@ input {
 
 .registration-adress {
   margin-bottom: 25px;
-  font-style: normal;
 }
 
 @media screen and (min-width: 768px) {
@@ -1659,36 +1708,31 @@ input {
 }
 
 .registration-unit {
-  margin-top: 15px;
+  padding-top: 11px;
 }
 
 @media screen and (min-width: 768px) {
   .registration-unit {
-    margin-top: 55px;
-    margin-bottom: 55px;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .registration-unit {
     margin-left: 30px;
   }
 }
 
-.registration-subtext {
+​.registration-subtext {
   margin-bottom: 15px;
-  font-size: 16px;
-  line-height: 1.25;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  .registration-subtext {
-    width: 210px;
+  ​.registration-subtext {
     text-align: left;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .registration-subtext {
-    width: 220px;
-    font-size: 18px;
-    line-height: 1.22;
   }
 }
 
@@ -1724,6 +1768,10 @@ input {
 
 .form__item {
   color: var(--main-accent);
+}
+
+.form__item:focus {
+  outline: none;
 }
 
 .registration-button {

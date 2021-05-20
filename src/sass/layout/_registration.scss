@@ -1,40 +1,6 @@
-.registration-section {
-  background-size: 240px 230px, 300px 500px;
-  background-repeat: no-repeat;
-
-  @media screen and (min-width: 768px) {
-    background-image: url(../images/registration/tablet/registration.png),
-      url(../images/registration/tablet/party.png);
-    background-position: left 10px top 22px, right -50px bottom -275px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (-o-min-device-pixel-ratio: 2/1),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/registration/tablet/registration@2x.png),
-        url(../images/registration/tablet/party@2x.png);
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    background-image: url(../images/registration/desktop/registration.png),
-      url(../images/registration/desktop/party.png);
-    background-position: left 132px top 6px, right 12px bottom -281px;
-
-    @media screen and (min-device-pixel-ratio: 2),
-      screen and (-webkit-min-device-pixel-ratio: 2),
-      screen and (-o-min-device-pixel-ratio: 2/1),
-      screen and (min-resolution: 192dpi),
-      screen and (min-resolution: 2dppx) {
-      background-image: url(../images/registration/desktop/registration@2x.png),
-        url(../images/registration/desktop/party@2x.png);
-    }
-  }
-}
-
 .reg-conteiner {
   position: relative;
+  z-index: 10;
   margin-left: auto;
   margin-right: auto;
 
@@ -48,44 +14,122 @@
   }
 }
 
-.registration-section__title {
+.reg-conteiner::before {
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 197px;
+    height: 202px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(69.49deg);
+    background-image: url(../images/registration/tablet/donut.png);
+    top: 24px;
+    left: -35px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/registration/tablet/donut@2x.png);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/registration/desktop/donut.png);
+    top: 9px;
+    left: -127px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/registration/desktop/donut@2x.png);
+  }
+}
+
+.reg-conteiner::after {
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    width: 190px;
+    height: 228px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(-47.68deg);
+    z-index: -1;
+    background-image: url(../images/registration/tablet/party-confetti.png);
+    top: 158px;
+    right: -6px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/registration/tablet/party-confetti@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/registration/tablet/party-confetti.png);
+    top: 184px;
+    right: -27px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/registration/tablet/party-confetti@2x.png);
+  }
+}
+
+.registration__title {
   margin-bottom: 30px;
 }
 
 .registration-all {
-  background: var(--main-bg-color_);
+  background-color: var(--main-bg-color);
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
-    background: #fffff9;
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align-last: left;
     border-radius: 150px;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 }
 
 .registration-info {
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  text-align: center;
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
-  border-left: 0;
+
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  }
 
   @media screen and (min-width: 768px) {
-    margin-top: 35px;
-    margin-bottom: 35px;
     padding-top: 20px;
-    padding-left: 35px;
     padding-right: 30px;
     text-align: right;
     border-right: 1px solid rgba(171, 129, 108, 0.5);
-    border-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-left: 110px;
     font-size: 20px;
     line-height: 1.2;
   }
@@ -93,7 +137,6 @@
 
 .registration-adress {
   margin-bottom: 25px;
-  font-style: normal;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 35px;
@@ -101,30 +144,25 @@
 }
 
 .registration-unit {
-  margin-top: 15px;
+  padding-top: 11px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 55px;
-    margin-bottom: 55px;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
     margin-left: 30px;
   }
 }
 
-.registration-subtext {
+​.registration-subtext {
   margin-bottom: 15px;
-  font-size: 16px;
-  line-height: 1.25;
   text-align: center;
 
   @media screen and (min-width: 768px) {
-    width: 210px;
     text-align: left;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 220px;
-    font-size: 18px;
-    line-height: 1.22;
   }
 }
 
@@ -151,6 +189,10 @@
 
 .form__item {
   color: var(--main-accent);
+}
+
+.form__item:focus {
+  outline: none;
 }
 
 .registration-button {

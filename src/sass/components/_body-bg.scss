@@ -1,0 +1,38 @@
+.body-bg {
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 461px, 100% 1215px;
+  background-position: center top, center bottom 216px;
+  background-image: url(../images/bg-image/mobile/header-bg.png),
+    url(../images/bg-image/mobile/review-bg.png);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/bg-image/mobile/header-bg@2x.png),
+      url(../images/bg-image/mobile/review-bg@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-repeat: no-repeat;
+    background-size: 100% 622px, 100% 1260px;
+    background-position: center top, center bottom 63px;
+    background-image: url(../images/bg-image/tablet/header-bg.png),
+      url(../images/bg-image/tablet/review-bg.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/bg-image/tablet/header-bg@2x.png),
+        url(../images/bg-image/tablet/review-bg@2x.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-position: center top, center bottom;
+    background-size: 100% 1036px, 100% 1497px;
+    background-image: url(../images/bg-image/desktop/header-bg.png),
+      url(../images/bg-image/desktop/review-bg.png);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/bg-image/desktop/header-bg@2x.png),
+        url(../images/bg-image/desktop/review-bg@2x.png);
+    }
+  }
+}

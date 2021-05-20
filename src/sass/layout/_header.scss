@@ -41,3 +41,48 @@
     width: 719px;
   }
 }
+
+.header-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 205;
+  top: 15px;
+  right: 15px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    top: 26px;
+    right: 67px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.header-button .icon--close {
+  display: none;
+}
+
+.header-button .icon--menu {
+  display: block;
+}
+
+.header-button.is-open .icon--close {
+  display: block;
+}
+
+.header-button.is-open:hover,
+.header-button.is-open:focus .icon--close {
+  transition: transform 300ms cubic-bezier(0.3, 0.79, 0.92, 0.15) 300ms;
+  transform: rotate(-360deg);
+  transform-origin: center center;
+}
+
+.header-button.is-open .icon--menu {
+  display: none;
+}

@@ -1,101 +1,135 @@
 .reg-conteiner {
   position: relative;
-  z-index: 2;
+  z-index: 10;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 767.98px) {
+    max-width: 290px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #fffff9;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    border-radius: 150px 150px 0px 0px;
+  }
 }
 
-.registration-title {
-  font-family: var(--decorative-font);
+.reg-conteiner::before {
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 197px;
+    height: 202px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(69.49deg);
+    background-image: url(../images/registration/tablet/donut.png);
+    top: 24px;
+    left: -35px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/registration/tablet/donut@2x.png);
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/registration/desktop/donut.png);
+    top: 9px;
+    left: -127px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/registration/desktop/donut@2x.png);
+  }
+}
+
+.reg-conteiner::after {
+  @media screen and (min-width: 768px) {
+    content: '';
+    position: absolute;
+    width: 190px;
+    height: 228px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(-47.68deg);
+    z-index: -1;
+    background-image: url(../images/registration/tablet/party-confetti.png);
+    top: 158px;
+    right: -6px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/registration/tablet/party-confetti@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/registration/tablet/party-confetti.png);
+    top: 184px;
+    right: -27px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/registration/tablet/party-confetti@2x.png);
+  }
+}
+
+.registration__title {
   margin-bottom: 30px;
-  font-size: 24px;
-
-  text-align: center;
-
-  color: var(--main-text-color);
-
-  @media screen and (min-width: 1200px) {
-    font-size: 36px;
-  }
-}
-
-.registration-donut {
-  position: absolute;
-  z-index: -1;
-  @media screen and (max-width: 767.98px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: block;
-    top: 10px;
-    left: -80px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    top: 10px;
-    left: -150px;
-  }
-}
-
-.registration-party {
-  position: absolute;
-  z-index: -1;
-  @media screen and (max-width: 767.98px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: block;
-    width: 200px;
-    top: 15px;
-    left: 340px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    top: 75px;
-    left: 450px;
-  }
 }
 
 .registration-all {
-  background: var(--main-bg-color_);
+  background-color: var(--main-bg-color);
+  text-align: center;
 
   @media screen and (min-width: 768px) {
     display: flex;
-
-    background: #fffff9;
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align-last: left;
     border-radius: 150px;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 }
 
 .registration-info {
-  font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
-  text-align: center;
 
-  border-top: 0;
-  border-right: 0;
-  border-bottom: 1px solid rgba(171, 129, 108, 0.5);
-  border-left: 0;
+  @media screen and (max-width: 767.98px) {
+    text-align: center;
+    border-bottom: 1px solid rgba(171, 129, 108, 0.5);
+  }
 
   @media screen and (min-width: 768px) {
-    margin-top: 35px;
-    margin-bottom: 35px;
     padding-top: 20px;
-    padding-left: 35px;
     padding-right: 30px;
-
-    border-right: 1px solid rgba(171, 129, 108, 0.5);
-    border-bottom: 0;
-
     text-align: right;
+    border-right: 1px solid rgba(171, 129, 108, 0.5);
   }
 
   @media screen and (min-width: 1200px) {
-    padding-left: 110px;
-
     font-size: 20px;
     line-height: 1.2;
   }
@@ -111,41 +145,25 @@
 }
 
 .registration-unit {
-  margin-top: 15px;
-  margin-bottom: 45px;
+  padding-top: 11px;
 
   @media screen and (min-width: 768px) {
-    margin-top: 55px;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
     margin-left: 30px;
   }
 }
 
-.registration-subtext {
+​.registration-subtext {
   margin-bottom: 15px;
   text-align: center;
 
-  @media screen and (min-width: 320px) {
-    width: 220px;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.25;
-    color: #2e2520;
-  }
-
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 768px) {
     text-align: left;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 220px;
-
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 1.22;
-    color: #2e2520;
   }
 }
 
@@ -166,12 +184,30 @@
   }
 }
 
+.registration-field:last-child {
+  margin-bottom: 0;
+}
+
 .form__item {
   color: var(--main-accent);
 }
 
+.form__item:focus {
+  outline: none;
+}
+
 .registration-button {
+  text-align: center;
+
   @media screen and (min-width: 768px) {
     margin-left: 25px;
+  }
+}
+
+.reg-button {
+  margin-top: 35px;
+
+  @media screen and (min-width: 768px) {
+    margin: 0;
   }
 }

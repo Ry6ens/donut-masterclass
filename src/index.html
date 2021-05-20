@@ -1,8 +1,19 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="./images/header/desktop/header-donuts.png" />
+    <meta property="og:image:secure_url" content="https://nina-antoniuk.github.io/donut-masterclass/" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="250" />
+    <meta property="og:image:height" content="300" />
+    <meta property="og:image:alt" content="Donut masterclass" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Dunut masterclass" />
+    <meta name="twitter:description" content="A doughnut-making masterclass for you and your friends" />
+    <meta name="twitter:image" content="./images/header/desktop/header-donuts.png" />
     <title>DONUT MASTERCLASS</title>
     <link
       rel="stylesheet"
@@ -19,8 +30,8 @@
 <body>
   <div class="body-bg">
     <include src="./partials/header.html"></include>
-    <include src="./partials/menu.html"></include>
     <main>
+      <include src="./partials/hero.html"></include>
       <include src="./partials/about.html"></include>
       <include src="./partials/program.html"></include>
       <include src="./partials/reviews.html"></include>
@@ -28,11 +39,10 @@
       <include src="./partials/contact.html"></include>
     </main>
     <include src="./partials/footer.html"></include>
-  
-    <script src="./index.js"></script>
-    <script src="./js/menu.js"></script>
-    <script src="./js/mobile-menu.js"></script>
-    <script src="./js/readmore-prog.js"></script>
-    <script src="./js/readMore.js"></script>
+  </div>
+  <script src="./index.js"></script>
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/readmore-prog.js"></script>
+  <script src="./js/readMore.js"></script>
   </body>
 </html>

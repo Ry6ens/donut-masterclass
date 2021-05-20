@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   z-index: 205;
   top: 15px;
   right: 15px;
@@ -54,6 +54,10 @@
   padding: 0;
   background-color: transparent;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    top: 26px;
+    right: 67px;
+  }
 
   @media screen and (min-width: 1280px) {
     display: none;

@@ -19,14 +19,14 @@
     content: '';
     position: absolute;
     z-index: -1;
-    width: 197px;
-    height: 202px;
+    width: 196px;
+    height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(69.49deg);
     background-image: url(../images/registration/tablet/donut.png);
-    top: 24px;
-    left: -35px;
+    top: 34px;
+    left: -50px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -39,7 +39,7 @@
 
   @media screen and (min-width: 1280px) {
     background-image: url(../images/registration/desktop/donut.png);
-    top: 9px;
+    top: 49px;
     left: -127px;
   }
 
@@ -57,14 +57,14 @@
     content: '';
     position: absolute;
     width: 190px;
-    height: 228px;
+    height: 345px;
     background-size: cover;
     background-repeat: no-repeat;
     transform: rotate(-47.68deg);
     z-index: -1;
     background-image: url(../images/registration/tablet/party-confetti.png);
-    top: 158px;
-    right: -6px;
+    top: 90px;
+    right: -65px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -75,10 +75,12 @@
     background-image: url(../images/registration/tablet/party-confetti@2x.png);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
+    width: 300px;
+    height: 545px;
     background-image: url(../images/registration/tablet/party-confetti.png);
-    top: 184px;
-    right: -27px;
+    top: 75px;
+    right: -57px;
   }
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -179,14 +181,6 @@
 
 .registration-field:last-child {
   margin-bottom: 0;
-}
-
-.form__item {
-  color: var(--main-accent);
-}
-
-.form__item:focus {
-  outline: none;
 }
 
 .registration-button {

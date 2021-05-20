@@ -93,6 +93,7 @@
 }
 
 .container-reviews__list {
+  padding: 0;
   @media screen and (min-width: 630px) {
     position: relative;
     min-height: 280px;

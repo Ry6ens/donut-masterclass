@@ -36,6 +36,7 @@ p {
 .link {
   text-decoration: none;
   color: inherit;
+  transition: color var(--duration) var(--cubic);
 }
 
 .link:hover,

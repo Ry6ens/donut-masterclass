@@ -11,6 +11,19 @@
   }
 }
 
+.container-reviews {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 28px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 68px;
+  }
+}
+
 .container-reviews__name {
   display: block;
   font-family: var(--main-font);
@@ -77,19 +90,6 @@
 .container-reviews__item {
   list-style: none;
   padding: 0;
-}
-
-.container-reviews {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 28px;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 40px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-bottom: 68px;
-  }
 }
 
 .container-reviews__list {

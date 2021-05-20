@@ -56,39 +56,39 @@
   @media screen and (min-width: 768px) {
     content: '';
     position: absolute;
-    width: 190px;
-    height: 345px;
+    width: 207px;
+    height: 208px;
     background-size: cover;
     background-repeat: no-repeat;
-    transform: rotate(-47.68deg);
+    transform: rotate(-73.68deg);
     z-index: -1;
     background-image: url(../images/registration/tablet/party-confetti.png);
-    top: 90px;
-    right: -65px;
-  }
+    top: 182px;
+    right: -72px;
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/registration/tablet/party-confetti@2x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/registration/tablet/party-confetti@2x.png);
+    }
   }
 
   @media screen and (min-width: 1200px) {
-    width: 300px;
-    height: 545px;
+    width: 289px;
+    height: 407px;
     background-image: url(../images/registration/tablet/party-confetti.png);
-    top: 75px;
+    top: 80px;
     right: -57px;
-  }
 
-  @media screen and (min-device-pixel-ratio: 2),
-    screen and (-webkit-min-device-pixel-ratio: 2),
-    screen and (-o-min-device-pixel-ratio: 2/1),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/registration/tablet/party-confetti@2x.png);
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url(../images/registration/tablet/party-confetti@2x.png);
+    }
   }
 }
 

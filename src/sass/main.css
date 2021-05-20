@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --main-bg-color: #fffff9;
   --secondary-bg-color: #fef3e4;
@@ -702,6 +701,13 @@ input {
   }
 }
 
+.hero__conteiner .button:hover,
+.hero__conteiner .button:focus {
+  color: var(--secondary-bg-color);
+  -webkit-transition: color var(--duration) var(--cubic) var(--delay);
+  transition: color var(--duration) var(--cubic) var(--delay);
+}
+
 .hero__title {
   width: 224px;
   margin-bottom: 3px;
@@ -733,10 +739,23 @@ input {
   line-height: 1.25;
 }
 
+@media screen and (max-width: 767.98px) {
+  .hero__text {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__text {
+    margin-bottom: 26px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .hero__text {
     font-size: 24px;
     line-height: 1.21;
+    margin-bottom: 30px;
   }
 }
 
@@ -1282,6 +1301,7 @@ input {
   max-width: 626px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 28px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -1291,12 +1311,6 @@ input {
   .container-reviews {
     padding: 0;
   }
-}
-
-.container-reviews {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 28px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1509,7 +1523,7 @@ input {
 @media screen and (min-width: 768px) {
   .container-reviews__anime {
     position: absolute;
-    top: 90%;
+    top: -25%;
     left: 85%;
     display: block;
     -webkit-transform: translate(-50%, -50%);
@@ -1545,18 +1559,13 @@ input {
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .container-reviews__anime {
-    top: 100%;
-    left: 75%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-}
-
 .container-reviews__img {
   border-radius: 50%;
   overflow: hidden;
+}
+
+.registration {
+  padding-top: 30px;
 }
 
 .reg-conteiner {
@@ -1687,6 +1696,7 @@ input {
 
 .registration-info {
   font-weight: 500;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -1725,6 +1735,7 @@ input {
     margin-left: 30px;
     padding-top: 20px;
     padding-bottom: 18px;
+    text-align-last: left;
   }
 }
 
@@ -1734,13 +1745,13 @@ input {
   }
 }
 
-​.registration-subtext {
+.registration-subtext {
   margin-bottom: 15px;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-  ​.registration-subtext {
+  .registration-subtext {
     text-align: left;
   }
 }

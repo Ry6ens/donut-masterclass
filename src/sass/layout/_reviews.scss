@@ -2,6 +2,7 @@
   max-width: 626px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 28px;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
@@ -9,12 +10,6 @@
   @media screen and (min-width: 320px) {
     padding: 0;
   }
-}
-
-.container-reviews {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 28px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 40px;
@@ -190,7 +185,7 @@
 @media screen and (min-width: 768px) {
   .container-reviews__anime {
     position: absolute;
-    top: 90%;
+    top: -25%;
     left: 85%;
     display: block;
     transform: translate(-50%, -50%);
@@ -211,13 +206,13 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .container-reviews__anime {
-    top: 100%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-  }
-}
+// @media screen and (min-width: 1280px) {
+//   .container-reviews__anime {
+//     top: 100%;
+//     left: 75%;
+//     transform: translate(-50%, -50%);
+//   }
+// }
 .container-reviews__img {
   border-radius: 50%;
   overflow: hidden;

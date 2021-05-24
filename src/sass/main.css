@@ -447,10 +447,7 @@ p {
   cursor: pointer;
   -webkit-transition: background-color var(--duration) var(--cubic) var(--delay);
   transition: background-color var(--duration) var(--cubic) var(--delay);
-}
-
-.button:hover, .button:focus {
-  background-color: var(--accent-text-color);
+  --hover: #a6ab6c;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -475,6 +472,29 @@ p {
     padding-right: 44px;
     margin-top: 30px;
     min-width: 158px;
+  }
+}
+
+.button:hover,
+.button:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  -webkit-box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0);
+          box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0);
+  background-color: var(--icon-color);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 var(--hover);
+            box-shadow: 0 0 0 0 var(--hover);
   }
 }
 

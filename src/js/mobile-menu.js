@@ -13,7 +13,10 @@
 
     for (i in menuItem) {
     const item = menuItem[i];
-    item.addEventListener('click', () => mobileMenuRef.classList.remove('is-open'));
+    item.addEventListener('click', () => {
+      mobileMenuRef.classList.remove('is-open');
+      menuBtnRef.classList.remove('is-open');
+    });
   }
 })();
 

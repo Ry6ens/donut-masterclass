@@ -14,19 +14,20 @@
                     <div class="form-content-wrapp">
                         <div class="registration-field">
                             <label for="name"></label>
-                            <input class="form__input" type="text" name="name" id="name" placeholder="Your name" required>
+                            <input class="form__input" type="text" name="name" id="name" placeholder="Your name" title="enter your name"
+                            pattern="^[a-zA-Z\s]+$" required>
                         </div>
 
                         <div class="registration-field">
                             <label for="tel"></label>
-                            <input class="form__input" type="tel" name="tel" id="tel" placeholder="Phone Number"  
-                            required="">
+                            <input class="form__input" type="tel" name="tel" id="tel" placeholder="Phone Number" title="enter your phone number" 
+                            pattern="[0-9]{10}" required="">
                         </div>
                         
                         <div class="registration-field">
                             <label for="mail"></label>
-                            <input class="form__input" type="email" name="mail" id="mail" placeholder="Email" 
-                            required="">
+                            <input class="form__input" type="email" name="mail" id="mail" placeholder="Email" title="enter your email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required="">
                         </div>
                     </div>
 

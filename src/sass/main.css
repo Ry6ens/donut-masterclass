@@ -214,8 +214,8 @@ p {
 
 @media screen and (min-width: 768px) {
   .body-bg--bottom {
-    height: 1282px;
-    background-size: 100% 1227px;
+    height: 1248px;
+    background-size: 100% 1191px;
     background-image: url(../images/bg-image/tablet/review-bg.png);
   }
 }
@@ -228,7 +228,7 @@ p {
 
 @media screen and (min-width: 1280px) {
   .body-bg--bottom {
-    height: 1509px;
+    height: 1478px;
     background-size: 100% 1509px;
     background-image: url(../images/bg-image/desktop/review-bg.png);
   }
@@ -1619,8 +1619,16 @@ input {
   overflow: hidden;
 }
 
-.registration {
-  padding-top: 30px;
+@media screen and (max-width: 767.98px) {
+  .registration {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .registration {
+    padding-top: 5px;
+  }
 }
 
 .reg-conteiner {

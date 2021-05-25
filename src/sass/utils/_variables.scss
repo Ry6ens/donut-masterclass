@@ -15,3 +15,5 @@
   --cubic: cubic-bezier(0.3, 0.79, 0.92, 0.15);
   --delay: 300ms;
 }
+$color: #ab816c;
+$hover: #{adjust-hue($color, 45deg)};

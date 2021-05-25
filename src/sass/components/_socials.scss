@@ -5,7 +5,9 @@
     height: 19px;
     width: 24px;
     fill: currentColor;
+    transition: fill var(--duration) var(--cubic) var(--delay);
   }
+
   @media screen and (max-width: 767.98px) {
     margin-top: 44px;
     justify-content: center;
@@ -24,12 +26,22 @@
 }
 
 .social-list__link {
-  display: block;
-  transition: color var(--duration) var(--cubic) var(--delay),
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background-color var(--duration) var(--cubic) var(--delay),
     transform var(--duration) var(--cubic) var(--delay);
 
   &:hover,
   &:focus {
     transform: scale(1.2);
+    background-color: var(--main-accent);
+  }
+
+  &:hover .icon,
+  &:focus .icon {
+    fill: var(--light-accent);
   }
 }

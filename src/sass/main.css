@@ -447,7 +447,6 @@ p {
   cursor: pointer;
   -webkit-transition: background-color var(--duration) var(--cubic) var(--delay);
   transition: background-color var(--duration) var(--cubic) var(--delay);
-  --hover: #a6ab6c;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -486,15 +485,15 @@ p {
 
 @-webkit-keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 var(--hover);
-            box-shadow: 0 0 0 0 var(--hover);
+    -webkit-box-shadow: 0 0 0 0 #a6ab6c;
+            box-shadow: 0 0 0 0 #a6ab6c;
   }
 }
 
 @keyframes pulse {
   0% {
-    -webkit-box-shadow: 0 0 0 0 var(--hover);
-            box-shadow: 0 0 0 0 var(--hover);
+    -webkit-box-shadow: 0 0 0 0 #a6ab6c;
+            box-shadow: 0 0 0 0 #a6ab6c;
   }
 }
 
@@ -508,6 +507,8 @@ p {
   height: 19px;
   width: 24px;
   fill: currentColor;
+  -webkit-transition: fill var(--duration) var(--cubic) var(--delay);
+  transition: fill var(--duration) var(--cubic) var(--delay);
 }
 
 @media screen and (max-width: 767.98px) {
@@ -536,16 +537,32 @@ p {
 }
 
 .social-list__link {
-  display: block;
-  -webkit-transition: color var(--duration) var(--cubic) var(--delay), -webkit-transform var(--duration) var(--cubic) var(--delay);
-  transition: color var(--duration) var(--cubic) var(--delay), -webkit-transform var(--duration) var(--cubic) var(--delay);
-  transition: color var(--duration) var(--cubic) var(--delay), transform var(--duration) var(--cubic) var(--delay);
-  transition: color var(--duration) var(--cubic) var(--delay), transform var(--duration) var(--cubic) var(--delay), -webkit-transform var(--duration) var(--cubic) var(--delay);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-transition: background-color var(--duration) var(--cubic) var(--delay), -webkit-transform var(--duration) var(--cubic) var(--delay);
+  transition: background-color var(--duration) var(--cubic) var(--delay), -webkit-transform var(--duration) var(--cubic) var(--delay);
+  transition: background-color var(--duration) var(--cubic) var(--delay), transform var(--duration) var(--cubic) var(--delay);
+  transition: background-color var(--duration) var(--cubic) var(--delay), transform var(--duration) var(--cubic) var(--delay), -webkit-transform var(--duration) var(--cubic) var(--delay);
 }
 
 .social-list__link:hover, .social-list__link:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  background-color: var(--main-accent);
+}
+
+.social-list__link:hover .icon,
+.social-list__link:focus .icon {
+  fill: var(--light-accent);
 }
 
 input {

@@ -1,12 +1,14 @@
 .container {
-  max-width: 629px;
+  max-width: 630px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .slider__items {
+  // display: flex;
+  // justify-content: center;
   text-align: center;
-  width: 300px;
+  max-width: 300px;
   transform: scale(0.7);
   transition: transform 300ms;
 }
@@ -14,7 +16,38 @@
 .slick-current {
   transform: scale(1);
 }
+.slick-slide .container-reviews__img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.slider__counter {
+  position: relative;
+  text-align: center;
+}
 
+.slick-arrow {
+  border: none;
+  background-color: none;
+}
+.slick-next {
+  position: absolute;
+  top: 89%;
+  left: 53%;
+  opacity: 0;
+}
+.slick-prev {
+  position: absolute;
+  top: 89%;
+  left: 35%;
+}
+// .slick-next {
+//   display: block;
+//   text-align: center;
+// }
+// .container-reviews__img {
+//   display: block;
+//   text-align: center;
+// }
 // .reviews {
 //   position: relative;
 // }

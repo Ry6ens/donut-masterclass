@@ -5,7 +5,8 @@
     height: 19px;
     width: 24px;
     fill: currentColor;
-    transition: fill var(--duration) var(--cubic) var(--delay);
+    transition: fill var(--duration) var(--cubic),
+      transform var(--duration) var(--cubic) var(--delay);
   }
 
   @media screen and (max-width: 767.98px) {
@@ -31,8 +32,7 @@
   align-items: center;
   padding: 5px;
   border-radius: 50%;
-  transition: background-color var(--duration) var(--cubic) var(--delay),
-    transform var(--duration) var(--cubic) var(--delay);
+  transition: background-color var(--duration) var(--cubic);
 
   &:hover,
   &:focus {

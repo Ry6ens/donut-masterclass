@@ -15,9 +15,6 @@
   cursor: pointer;
   transition: background-color var(--duration) var(--cubic) var(--delay);
 
-  $color: #ab816c;
-  --hover: #{adjust-hue($color, 45deg)};
-
   @media screen and (max-width: 767.98px) {
     margin-top: 37px;
   }
@@ -47,6 +44,6 @@
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 var(--hover);
+    box-shadow: 0 0 0 0 $hover;
   }
 }

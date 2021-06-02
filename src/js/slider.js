@@ -1,71 +1,41 @@
-$(document).ready(function(){
-    var $slider = $('.slider');
+$(document).ready(function () {
+  var $status = $('.reviews__number');
+  var $slickElement = $('.slider');
 
-if ($slider.length) {
-  var currentSlide;
-  var slidesCount;
-  var sliderCounter = document.createElement('div');
-  sliderCounter.classList.add('slider__counter');
-  
-  var updateSliderCounter = function(slick, currentIndex) {
-    currentSlide = slick.slickCurrentSlide() + 1;
-    slidesCount = slick.slideCount;
-    $(sliderCounter).text(currentSlide + '/' +slidesCount)
-  };
-
-  $slider.on('init', function(event, slick) {
-    $slider.append(sliderCounter);
-    updateSliderCounter(slick);
+  $slickElement.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $status.text(i + '/' + slick.slideCount);
   });
 
-  $slider.on('afterChange', function(event, slick, currentSlide) {
-    updateSliderCounter(slick, currentSlide);
-  });}
-    $('.slider').slick({
+  $('.slider').slick({
+    autoplay: false,
     centerMode: true,
-    centerPadding:'10px',
-    slidesToShow: 3,
-    slidesToScroll: 1,
-        arrows:true,
-        
-        responsive: [
-        {
-            breakpoint:768,
-            settings:{
-                slidesToShow:1,
-                arrows:false
-            }
-        }
-        ]
-    
-        
-    });
-    
-    $(".site-menu").on("click","a", function (event) {
-      event.preventDefault();
-      var id  = $(this).attr('href'),
-          top = $(id).offset().top;
-      $('body,html').animate({scrollTop: top}, 200)}); 
-
-
-      $(window).scroll(function() {
- 
-        if($(this).scrollTop() != 0) {
-         
-        $('.toTop').fadeIn();
-         
-        } else {
-         
-        $('.toTop').fadeOut();
-         
-        }
-         
-        });
-         
-        $('.toTop').click(function() {
-         
-        $('body,html').animate({scrollTop:0},200)});
-        
+    arrows: true,
+    centerPadding: '0',
+    slidesToShow: 1,
+    variableWidth: true,
+    dots: false,
+    autoplaySpeed: 2000,
+    speed: 500,
+    easing: 'ease',
+    asNavFor: '.reviews__text',
+    responsive: [{
+      breakpoint: 767,
+      settings: {
+        variableWidth: false,
+        slidesToShow: 1,
+        centerMode: true
+      }
+    }]
+  });
 });
 
-    
+$('.reviews__text').slick({
+  arrows: false,
+  centerPadding: '0',
+  slidesToShow: 1,
+  asNavFor: '.slider',
+  dots: false,
+  asNavFor: '.slider',
+  fade: true,
+});

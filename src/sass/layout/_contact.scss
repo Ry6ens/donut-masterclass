@@ -1,3 +1,17 @@
 .contact-us {
   padding-top: 90px;
 }
+
+.contact__form {
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    max-width: 434px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: 454px;
+  }
+}

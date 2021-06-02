@@ -1,27 +1,6 @@
-input {
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  border-bottom: 1px solid #ab816c;
-}
-
 .form {
   padding-left: 12px;
   padding-right: 12px;
-}
-
-.contact__form {
-  text-align: center;
-
-  @media screen and (min-width: 768px) {
-    max-width: 434px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  @media screen and (min-width: 1280px) {
-    max-width: 454px;
-  }
 }
 
 .form__wrap {
@@ -36,9 +15,23 @@ input {
 
 .form__input {
   width: 100%;
-  padding: 0;
-  color: #ab816c;
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-bottom: 0;
+  padding-right: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid #ab816c;
+  color: #8b655270;
   background-color: transparent;
+
+  &:focus {
+    outline: none;
+    border-radius: 5px;
+    color: var(--icon-color) !important;
+    box-shadow: 0 0 10px 5px #a3847549;
+  }
 
   &:-webkit-autofill,
   &:-webkit-autofill:hover,
@@ -48,16 +41,11 @@ input {
     color: #ab816c !important;
   }
 
-  &:focus {
-    outline: none;
-    color: #ab816c !important;
+  &::placeholder {
+    color: rgba(171, 129, 108, 0.5);
   }
 
   &:not(:focus):invalid {
     color: red;
-  }
-
-  &::placeholder {
-    color: rgba(171, 129, 108, 0.5);
   }
 }

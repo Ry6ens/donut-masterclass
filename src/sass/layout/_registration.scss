@@ -181,10 +181,9 @@
 }
 
 .registration-field {
-  position: relative;
   display: flex;
   flex-direction: column;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @media screen and (min-width: 1200px) {
     width: 235px;

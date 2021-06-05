@@ -10,7 +10,7 @@ $(document).ready(function () {
   $('.slider').slick({
     autoplay: false,
     centerMode: true,
-    arrows: true,
+    arrows: false,
     centerPadding: '0',
     slidesToShow: 1,
     variableWidth: true,
